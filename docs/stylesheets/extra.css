@@ -1,0 +1,54 @@
+/* extra.css - gaya tambahan thesis-review */
+
+/* Tabel agregasi matrix: scroll horizontal + bungkus kata */
+.matrix-table-wrap {
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+.matrix-table-wrap th,
+.matrix-table-wrap td {
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+.matrix-table-wrap th:nth-child(3),
+.matrix-table-wrap td:nth-child(3) {
+  min-width: 180px;
+  max-width: 260px;
+}
+.matrix-table-wrap th:nth-child(4),
+.matrix-table-wrap td:nth-child(4) {
+  min-width: 200px;
+  max-width: 280px;
+}
+
+/* Daftar referensi bibliografi */
+.bibliography-list {
+  padding-left: 1.25rem;
+  margin: 1rem 0;
+}
+.bibliography-list li {
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+.bibliography-list .citekey {
+  font-family: var(--md-code-font);
+  font-size: 0.85em;
+  background-color: var(--md-code-bg-color);
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+  margin-right: 0.4rem;
+}
+
+/* Diagram PRISMA: ikut tema terang/gelap, tidak overflow di HP */
+.mermaid {
+  overflow-x: auto;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+.mermaid svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}

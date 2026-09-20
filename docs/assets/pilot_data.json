@@ -1,0 +1,1802 @@
+[
+  {
+    "no": 1,
+    "paper_id": "P0931",
+    "title": "Position: Coding Benchmarks Are Misaligned with Agentic Software Engineering",
+    "year": 2026,
+    "venue": "arXiv (Cornell University)",
+    "doi": "10.48550/arxiv.2606.17799",
+    "pdf_path": "02_slr/retrieval/pdfs/P0931.pdf",
+    "abstract_short": "Coding agents have become a major mode of software engineering, but the benchmarks we use to compare them were designed in a pre-agent era: they collapse model, harness, and environment into a single end-to-end score, typically computed against one reference solution, with no component-level signal for iteration. We argue that current coding benchmarks are misaligned with agentic software engineering. A coding agent in practice is not a model: it is a system harness -- a composite of models, harnesses, contexts, environments, and feedback signals, any one of which can move the benchmark score ",
+    "is_control": false,
+    "modelA": {
+      "paper_id": "P0931",
+      "decision": "EXCLUDE",
+      "ec": "EC2",
+      "evidence_section": "Section 1 Introduction, Section 4 Three Symptoms of the Misalignment, and Section 6 Call to Action",
+      "rationale": "Makalah ini merupakan position paper konseptual yang membahas misalignment pada coding benchmark tanpa menyajikan eksperimen atau evaluasi empiris kuantitatif primer (data pada Tabel 1 sepenuhnya dikutip dari leaderboard sekunder)."
+    },
+    "modelB": {
+      "paper_id": "P0931",
+      "decision": "EXCLUDE",
+      "ec": "EC2",
+      "evidence_section": "Title & Section 1 (Introduction)",
+      "rationale": "Makalah ini merupakan position paper murni yang mengkritisi keterbatasan benchmark evaluasi coding agent dan tidak memuat evaluasi eksperimental primer kuantitatif."
+    },
+    "agreement": true,
+    "is_disagreement": false,
+    "modelC": {
+      "decision": "EXCLUDE",
+      "ec": "EC2",
+      "paper_id": "P0931",
+      "rationale": "Position paper yang mengkritik misalignment benchmark coding agen tanpa evaluasi empiris kuantitatif sistem multi-agen sendiri."
+    },
+    "unanimous": true,
+    "majority_decision": "EXCLUDE",
+    "agreed_count": 3
+  },
+  {
+    "no": 2,
+    "paper_id": "P0066",
+    "title": "HiveMind: Contribution-Guided Online Prompt Optimization of LLM Multi-Agent Systems",
+    "year": 2026,
+    "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+    "doi": "10.1609/aaai.v40i35.40222",
+    "pdf_path": "02_slr/retrieval/pdfs/P0066.pdf",
+    "abstract_short": "Recent advances in LLM-based multi-agent systems have demonstrated remarkable capabilities in complex decision-making scenarios such as financial trading and software engineering. However, evaluating each individual agent’s effectiveness and online optimization of underperforming agents remain open challenges. To address these issues, we present HiveMind, a self-adaptive framework designed to optimize LLM multi-agent collaboration through contribution analysis. At its core, HiveMind introduces Contribution-Guided Online Prompt Optimization (CG-OPO), which autonomously refines agent prompts bas",
+    "is_control": false,
+    "modelA": {
+      "paper_id": "P0066",
+      "decision": "EXCLUDE",
+      "ec": "EC5",
+      "evidence_section": "Section System Formalization - Implementation and Agent Roles & Section Experimental Evaluation",
+      "rationale": "Makalah ini berfokus dan dievaluasi sepenuhnya pada domain perdagangan finansial/saham (financial stock-trading) dengan metrik pasar saham (Sharpe ratio, return), bukan untuk tugas-tugas Software Engineering."
+    },
+    "modelB": {
+      "paper_id": "P0066",
+      "decision": "EXCLUDE",
+      "ec": "EC5",
+      "evidence_section": "Implementation and Agent Roles (page 3) & Experimental Evaluation (page 6)",
+      "rationale": "Penelitian ini mengimplementasikan dan mengevaluasi sistem multi-agent pada domain financial stock trading (menggunakan agen analisis pasar saham dan metrik Sharpe ratio/return), sehingga berada di luar domain Software Engineering."
+    },
+    "agreement": true,
+    "is_disagreement": false,
+    "modelC": {
+      "decision": "EXCLUDE",
+      "ec": "EC5",
+      "paper_id": "P0066",
+      "rationale": "Framework multi-agen CG-OPO/DAG-Shapley dengan evaluasi kuantitatif, tetapi domain stock-trading (Sharpe ratio AAPL/META/MSFT/NVDA) bukan tugas software engineering."
+    },
+    "unanimous": true,
+    "majority_decision": "EXCLUDE",
+    "agreed_count": 3
+  },
+  {
+    "no": 3,
+    "paper_id": "P0737",
+    "title": "A Repository of Method Fragments for Agent-Oriented Development of Learning-Based Edge Computing Systems",
+    "year": 2021,
+    "venue": "IEEE Network",
+    "doi": "10.1109/mnet.011.2000296",
+    "pdf_path": "02_slr/retrieval/pdfs/P0737.pdf",
+    "abstract_short": "The upcoming avenue of IoT, with its massive generated data, makes it really hard to train centralized systems with machine learning in real time. This problem can be addressed with learning-based edge computing systems where the learning is performed in a distributed way on the nodes. In particular, this work focuses on developing multi-agent systems for implementing learning-based edge computing systems. The diversity of methodologies in agent-oriented software engineering reflects the complexity of developing multi-agent systems. The division of the development processes into method fragmen",
+    "is_control": false,
+    "modelA": {
+      "paper_id": "P0737",
+      "decision": "EXCLUDE",
+      "ec": "EC5",
+      "evidence_section": "Section 5 EXPERIMENTATION WITH LEARN-BASED EDGE COMPUTING IN BIGDATASIM SIMULATOR",
+      "rationale": "Makalah ini tidak mengkaji sistem multi-agent berbasis Large Language Model (LLM) untuk tugas rekayasa perangkat lunak, melainkan berfokus pada metodologi repositori method fragment AOSE tradisional dan simulasi bisnis IoT untuk mengestimasi laba dan pelanggan toko."
+    },
+    "modelB": {
+      "paper_id": "P0737",
+      "decision": "EXCLUDE",
+      "ec": "EC5",
+      "evidence_section": "Abstract & Section 5 (EXPERIMENTATION WITH LEARN-BASED EDGE COMPUTING IN BIGDATASIM SIMULATOR)",
+      "rationale": "Makalah ini tidak mengkaji atau mengusulkan sistem Multi-Agent berbasis LLM untuk tugas rekayasa perangkat lunak, melainkan berfokus pada repositori method fragments untuk perancangan sistem edge computing berbasis model machine learning tradisional (SVR, KNN, MLP) pada simulasi bisnis IoT."
+    },
+    "agreement": true,
+    "is_disagreement": false,
+    "modelC": {
+      "decision": "EXCLUDE",
+      "ec": "EC5",
+      "paper_id": "P0737",
+      "rationale": "Repositori method fragment MAS klasik (PASSI/INGENIAS/FIPA) untuk edge computing/IoT dengan eksperimen simulator BigDataSim, bukan LLM multi-agen untuk tugas SE."
+    },
+    "unanimous": true,
+    "majority_decision": "EXCLUDE",
+    "agreed_count": 3
+  },
+  {
+    "no": 4,
+    "paper_id": "P2332",
+    "title": "Many hands make light work: An LLM-based multi-agent system for detecting malicious PyPI packages",
+    "year": 2026,
+    "venue": "Journal of Systems and Software",
+    "doi": "10.1016/j.jss.2026.112792",
+    "pdf_path": "02_slr/retrieval/pdfs/P2332.pdf",
+    "abstract_short": "",
+    "is_control": false,
+    "modelA": {
+      "paper_id": "P2332",
+      "decision": "INCLUDE",
+      "ec": "-",
+      "evidence_section": "Abstract & Section 3 (Methodology)",
+      "rationale": "Makalah ini mengusulkan LAMPS, sebuah arsitektur multi-agent berbasis LLM menggunakan kerangka CrewAI dengan koordinasi empat agen spesifik peran untuk mendeteksi kode berbahaya pada ekosistem PyPI. Sistem ini dievaluasi secara empiris dan kuantitatif menggunakan dua dataset repositori riil dengan metrik akurasi, presisi, recall, F1, serta uji signifikansi statistik."
+    },
+    "modelB": {
+      "paper_id": "P2332",
+      "decision": "INCLUDE",
+      "ec": "-",
+      "evidence_section": "Section 3 (Methodology), Section 4 (Evaluation), and Section 5 (Experimental Results)",
+      "rationale": "Makalah ini mengusulkan LAMPS, sebuah sistem multi-agent LLM berbasis CrewAI dengan empat agen terspesialisasi untuk mendeteksi paket berbahaya pada repositori PyPI, lengkap dengan koordinasi antar-agen serta evaluasi empiris kuantitatif komparatif yang ketat terhadap metode baseline dan single-agent."
+    },
+    "agreement": true,
+    "is_disagreement": false,
+    "modelC": {
+      "decision": "INCLUDE",
+      "ec": "-",
+      "paper_id": "P2332",
+      "rationale": "Sistem multi-agen LLM LAMPS (4 agen via CrewAI) untuk deteksi paket PyPI malicious dengan evaluasi kuantitatif kuat (D1 97,7% akurasi, D2 99,5%, uji McNemar)."
+    },
+    "unanimous": true,
+    "majority_decision": "INCLUDE",
+    "agreed_count": 3
+  },
+  {
+    "no": 5,
+    "paper_id": "P1937",
+    "title": "A Visionary Look at Vibe Researching",
+    "year": 2026,
+    "venue": "arXiv (Cornell University)",
+    "doi": "10.48550/arxiv.2604.00945",
+    "pdf_path": "02_slr/retrieval/pdfs/P1937.pdf",
+    "abstract_short": "Vibe researching is an emerging paradigm in which human researchers provide high-level direction and critical judgment while LLM-based agents handle the labor-intensive execution of literature review, experimentation, data analysis, and manuscript drafting. Inspired by the \"vibe coding\" movement in software engineering, it occupies a middle ground between traditional manual research and fully autonomous AI research systems. This paper defines the concept, describes its methodology (multi-agent architectures, memory, tool use, retrieval-augmented generation, and the human's role as orchestrator",
+    "is_control": false,
+    "modelA": {
+      "paper_id": "P1937",
+      "decision": "EXCLUDE",
+      "ec": "EC2",
+      "evidence_section": "Section 4 (page 13) & Section 7.10 (page 41)",
+      "rationale": "Makalah ini merupakan perspective/position paper murni yang menguraikan kerangka konseptual 'vibe researching' tanpa menyertakan evaluasi empiris kuantitatif konkret, di mana penulis secara eksplisit menyatakan bahwa studi ini berbasis argumen analitis dan menyerukan evaluasi empiris sebagai agenda masa depan."
+    },
+    "modelB": {
+      "paper_id": "P1937",
+      "decision": "EXCLUDE",
+      "ec": "EC2",
+      "evidence_section": "Section 1 (hal. 3), Section 4 (hal. 13), Section 7.10 (hal. 41-42)",
+      "rationale": "Makalah ini merupakan perspective/position paper yang mengusulkan kerangka konseptual untuk 'vibe researching' tanpa menyertakan evaluasi eksperimental primer secara kuantitatif."
+    },
+    "agreement": true,
+    "is_disagreement": false,
+    "modelC": {
+      "decision": "EXCLUDE",
+      "ec": "EC2",
+      "paper_id": "P1937",
+      "rationale": "Visionary/conceptual paper yang mendefinisikan paradigma vibe researching tanpa implementasi dan evaluasi empiris kuantitatif sendiri."
+    },
+    "unanimous": true,
+    "majority_decision": "EXCLUDE",
+    "agreed_count": 3
+  },
+  {
+    "no": 6,
+    "paper_id": "P0552",
+    "title": "Generative AI and Empirical Software Engineering: A Paradigm Shift",
+    "year": 2025,
+    "venue": "Proceedings - 2025 2nd IEEE/ACM International Conference on AI-powered Software, AIware 2025",
+    "doi": "10.1109/aiware69974.2025.00033",
+    "pdf_path": "02_slr/retrieval/pdfs/P0552.pdf",
+    "abstract_short": "The adoption of large language models (LLMs) and autonomous agents in software engineering marks an enduring paradigm shift. These systems create new opportunities for tool design, workflow orchestration, and empirical observation, while fundamentally reshaping the roles of developers and the artifacts they produce. Although traditional empirical methods remain central to software engineering research, the rapid evolution of AI introduces new data modalities, alters causal assumptions, and challenges foundational constructs such as 'developer','artifact', and 'interaction'. As humans and AI ag",
+    "is_control": false,
+    "modelA": {
+      "paper_id": "P0552",
+      "decision": "EXCLUDE",
+      "ec": "EC2",
+      "evidence_section": "Abstract",
+      "rationale": "Makalah ini merupakan vision paper murni yang membahas pergeseran paradigma dan metodologi riset empirical software engineering di era GenAI tanpa mengusulkan sistem multi-agent spesifik maupun menyajikan evaluasi eksperimental primer kuantitatif."
+    },
+    "modelB": {
+      "paper_id": "P0552",
+      "decision": "EXCLUDE",
+      "ec": "EC2",
+      "evidence_section": "Abstract",
+      "rationale": "Makalah ini merupakan vision/position paper konseptual yang membahas dampak dan pergeseran paradigma metodologi riset empirical software engineering di era GenAI tanpa mengusulkan arsitektur multi-agent SE ataupun menyajikan evaluasi eksperimental primer."
+    },
+    "agreement": true,
+    "is_disagreement": false,
+    "modelC": {
+      "decision": "EXCLUDE",
+      "ec": "EC2",
+      "paper_id": "P0552",
+      "rationale": "Vision/position paper tentang paradigma GenAI dalam empirical SE tanpa mengimplementasikan atau mengevaluasi sistem multi-agent secara empiris kuantitatif."
+    },
+    "unanimous": true,
+    "majority_decision": "EXCLUDE",
+    "agreed_count": 3
+  },
+  {
+    "no": 7,
+    "paper_id": "P3457",
+    "title": "ARCeR: An&#xa0;Agentic RAG for&#xa0;the&#xa0;Automated Definition of&#xa0;Cyber Ranges",
+    "year": 2025,
+    "venue": "Availability, Reliability and Security",
+    "doi": "10.1007/978-3-032-00630-1_2",
+    "pdf_path": "02_slr/retrieval/pdfs/P3457.pdf",
+    "abstract_short": "",
+    "is_control": false,
+    "modelA": {
+      "paper_id": "P3457",
+      "decision": "EXCLUDE",
+      "ec": "EC3",
+      "evidence_section": "Section 3.1 (ARCeR schema) & Section 3.2 (Implementation details)",
+      "rationale": "ARCeR mengimplementasikan arsitektur single-agent berbasis ReAct agent yang menggunakan satu LLM penalaran dengan pemanggilan tool eksternal (RAG subsystem dan Checker Tool), bukan sistem kolaboratif multi-agent LLM."
+    },
+    "modelB": {
+      "paper_id": "P3457",
+      "decision": "EXCLUDE",
+      "ec": "EC3",
+      "evidence_section": "Section 3.1 (ARCeR schema) & Section 3.2 (Implementation details)",
+      "rationale": "ARCeR dirancang menggunakan pendekatan single-agent berbasis arsitektur ReAct dengan satu LLM pengendali yang memanggil tool eksternal (RAG subsystem dan Checker Tool), sehingga bukan merupakan sistem multi-agent LLM."
+    },
+    "agreement": true,
+    "is_disagreement": false,
+    "modelC": {
+      "decision": "EXCLUDE",
+      "ec": "EC3",
+      "paper_id": "P3457",
+      "rationale": "ARCeR adalah single ReAct agent (satu LLM + tools RAG/checker) untuk generate konfigurasi cyber range, bukan sistem multi-agent dengan agen terspesialisasi yang berkoordinasi."
+    },
+    "unanimous": true,
+    "majority_decision": "EXCLUDE",
+    "agreed_count": 3
+  },
+  {
+    "no": 8,
+    "paper_id": "P1252",
+    "title": "SWE-EVO: Benchmarking Coding Agents in Long-Horizon Software Evolution Scenarios",
+    "year": 2025,
+    "venue": "",
+    "doi": "",
+    "pdf_path": "02_slr/retrieval/pdfs/P1252.pdf",
+    "abstract_short": "Existing benchmarks for AI coding agents focus on isolated, single-issue tasks such as fixing a bug or adding a small feature. However, real-world software engineering is a long-horizon endeavor: developers interpret high-level requirements, coordinate changes across many files, and evolve codebases over multiple iterations while preserving functionality. We introduce SWE-EVO, a benchmark for this long-horizon software evolution challenge. Constructed from release notes of seven mature open-source Python projects, SWE-EVO comprises 48 tasks requiring multi-step modifications spanning an averag",
+    "is_control": false,
+    "modelA": {
+      "paper_id": "P1252",
+      "decision": "EXCLUDE",
+      "ec": "EC3",
+      "evidence_section": "Section 4.1 (Agents and Model Selection)",
+      "rationale": "Makalah ini berfokus pada pengusulan benchmark software evolution (SWE-EVO) dan hanya mengevaluasi scaffold single-agent (OpenHands dengan CodeActAgent serta SWE-agent) tanpa merancang atau mengkaji koordinasi sistem multi-agent."
+    },
+    "modelB": {
+      "paper_id": "P1252",
+      "decision": "EXCLUDE",
+      "ec": "EC3",
+      "evidence_section": "Section 4.1 Agents and Model Selection",
+      "rationale": "Makalah ini berfokus pada perancangan dataset benchmark baru (SWE-EVO) dan mengevaluasi model-model LLM menggunakan scaffold agen tunggal (CodeActAgent pada OpenHands dan SWE-agent) tanpa mengusulkan maupun mengkaji arsitektur atau interaksi multi-agent."
+    },
+    "agreement": true,
+    "is_disagreement": true,
+    "modelC": {
+      "decision": "INCLUDE",
+      "ec": "-",
+      "paper_id": "P1252",
+      "rationale": "Benchmark SWE-EVO mengevaluasi sistem multi-agent LLM (OpenHands, SWE-agent, 18 model) pada tugas evolusi perangkat lunak long-horizon dengan metrik kuantitatif (Resolved/Fix Rate)."
+    },
+    "unanimous": false,
+    "majority_decision": "EXCLUDE",
+    "agreed_count": 2
+  },
+  {
+    "no": 9,
+    "paper_id": "P0781",
+    "title": "Spec-Driven Development for Agentic Software Engineering: Harnessing Human-Agent Teamwork",
+    "year": 2026,
+    "venue": "arXiv (Cornell University)",
+    "doi": "10.48550/arxiv.2609.00252",
+    "pdf_path": "02_slr/retrieval/pdfs/P0781.pdf",
+    "abstract_short": "Context: Software engineering is moving from AI-assisted practices like vibe coding, in which assistants accelerate individual developers, towards Agentic Software Engineering (ASE), in which autonomous agents are delegated goal-level tasks. However, industry reports a productivity paradox: as individual productivity increases, team throughput, review capacity, and stability degrade because team-scale software engineering discipline is neglected. Objective: This paper aims to establish the conceptual and methodological foundations of Spec-Driven Development (SDD) as an enabling discipline for ",
+    "is_control": false,
+    "modelA": {
+      "paper_id": "P0781",
+      "decision": "EXCLUDE",
+      "ec": "EC2",
+      "evidence_section": "Section 3 (Research Methodology) & Section 8.3 (Threats to validity)",
+      "rationale": "Makalah ini merupakan secondary study berupa Multivocal Literature Review (MLR) yang mengusulkan kerangka konseptual sosio-teknikal murni tanpa evaluasi eksperimental primer maupun metrik empiris kuantitatif."
+    },
+    "modelB": {
+      "paper_id": "P0781",
+      "decision": "EXCLUDE",
+      "ec": "EC2",
+      "evidence_section": "Section 3 (Research Methodology) & Section 8.3 (Threats to validity)",
+      "rationale": "Makalah ini merupakan position paper dan sintesis konseptual berbasis Multivocal Literature Review (MLR) yang tidak menyediakan evaluasi eksperimental empiris kuantitatif primer untuk memvalidasi kerangka kerja yang diusulkan."
+    },
+    "agreement": true,
+    "is_disagreement": false,
+    "modelC": {
+      "decision": "EXCLUDE",
+      "ec": "EC2",
+      "paper_id": "P0781",
+      "rationale": "Conceptual paper Spec-Driven Development berbasis analisis literatur abu-abu yang eksplisit menyatakan belum tervalidasi empiris dan tanpa evaluasi kuantitatif sistem multi-agent."
+    },
+    "unanimous": true,
+    "majority_decision": "EXCLUDE",
+    "agreed_count": 3
+  },
+  {
+    "no": 10,
+    "paper_id": "P3283",
+    "title": "Comparing a Human’s and a Multi-Agent System’s Thematic Analysis: Assessing Qualitative Coding Consistency",
+    "year": 2025,
+    "venue": "Artificial Intelligence in Education",
+    "doi": "10.1007/978-3-031-98420-4_5",
+    "pdf_path": "02_slr/retrieval/pdfs/P3283.pdf",
+    "abstract_short": "",
+    "is_control": false,
+    "modelA": {
+      "paper_id": "P3283",
+      "decision": "EXCLUDE",
+      "ec": "EC5",
+      "evidence_section": "Section 1 Introduction / Section 3.1 Dataset",
+      "rationale": "Makalah ini meneliti otomatisasi analisis tematik kualitatif (inductive thematic analysis) pada respons survei Computer-Supported Collaborative Learning (CSCL) di bidang pendidikan (AIED), yang berada di luar domain software engineering."
+    },
+    "modelB": {
+      "paper_id": "P3283",
+      "decision": "EXCLUDE",
+      "ec": "EC5",
+      "evidence_section": "Abstract & Section 1 (Introduction)",
+      "rationale": "Makalah ini berfokus pada otomatisasi analisis kualitatif tematik (qualitative coding) untuk penelitian pendidikan (AIED/CSCL), bukan tugas dalam domain Software Engineering (rekayasa perangkat lunak)."
+    },
+    "agreement": true,
+    "is_disagreement": false,
+    "modelC": {
+      "decision": "EXCLUDE",
+      "ec": "EC5",
+      "paper_id": "P3283",
+      "rationale": "Sistem multi-agent untuk thematic analysis kualitatif di bidang pendidikan (AIED), bukan untuk tugas Software Engineering."
+    },
+    "unanimous": true,
+    "majority_decision": "EXCLUDE",
+    "agreed_count": 3
+  },
+  {
+    "no": 11,
+    "paper_id": "P0694",
+    "title": "Hierarchical Large Language Models in Cloud-Edge-End Architecture for Heterogeneous Robot Cluster Control",
+    "year": 2023,
+    "venue": "ACM International Conference Proceeding Series",
+    "doi": "10.1145/3640771.3643717",
+    "pdf_path": "02_slr/retrieval/pdfs/P0694.pdf",
+    "abstract_short": "Despite their powerful semantic understanding and code generation capabilities, Large Language Models (LLMs) still face challenges when dealing with complex tasks. Multi-agent strategy generation and motion control are highly complex domains that inherently require experts from multiple fields to collaborate. To enhance multi-agent strategy generation and motion control, we propose an innovative architecture that employs the concept of a cloud-edge-end hierarchical structure. By leveraging multiple large language models with distinct areas of expertise, we can efficiently generate strategies a",
+    "is_control": false,
+    "modelA": {
+      "paper_id": "P0694",
+      "decision": "EXCLUDE",
+      "ec": "EC5",
+      "evidence_section": "Section 1 Introduction & Section 4 Experiment",
+      "rationale": "Makalah ini berfokus pada perencanaan strategi dan kontrol gerak klaster robot heterogen (quadruped robot dan drone), yang berada di luar domain rekayasa perangkat lunak."
+    },
+    "modelB": {
+      "paper_id": "P0694",
+      "decision": "EXCLUDE",
+      "ec": "EC5",
+      "evidence_section": "Section 1 Introduction & Section 4 Experiment",
+      "rationale": "Makalah ini berfokus pada strategi dekomposisi tugas dan kontrol gerak fisik untuk klaster robot heterogen (quadruped robot dan drone), sehingga berada di luar domain Software Engineering."
+    },
+    "agreement": true,
+    "is_disagreement": false,
+    "modelC": {
+      "decision": "EXCLUDE",
+      "ec": "EC5",
+      "paper_id": "P0694",
+      "rationale": "Arsitektur multi-LLM cloud-edge-end untuk strategi dan kontrol gerak klaster robot heterogen (robotika fisik), bukan tugas rekayasa perangkat lunak."
+    },
+    "unanimous": true,
+    "majority_decision": "EXCLUDE",
+    "agreed_count": 3
+  },
+  {
+    "no": 12,
+    "paper_id": "P0093",
+    "title": "Beyond Task Completion: An Assessment Framework for Evaluating Agentic AI Systems",
+    "year": 2026,
+    "venue": "Proceedings 2026 International Workshop on Agentic Engineering, AGENT 2026",
+    "doi": "10.1145/3786167.3788414",
+    "pdf_path": "02_slr/retrieval/pdfs/P0093.pdf",
+    "abstract_short": "Recent advances in agentic AI have shifted the focus from standalone Large Language Models (LLMs) to integrated systems that combine LLMs with tools, memory, and other agents to perform complex tasks. These multi-agent architectures enable coordinated reasoning, planning, and execution across diverse domains, allowing agents to collaboratively automate complex workflows. Despite these advances, evaluation and assessment of LLM agents and the multi-agent systems they constitute remain a fundamental challenge. Although various approaches have been proposed in the software engineering literature ",
+    "is_control": false,
+    "modelA": {
+      "paper_id": "P0093",
+      "decision": "EXCLUDE",
+      "ec": "EC5",
+      "evidence_section": "Section 4.1 Experimental Setup & Section 5.1 External Validity",
+      "rationale": "Penelitian ini mengkaji dan mengevaluasi sistem agen pada domain operasional cloud murni (Autonomous CloudOps seperti terminasi EC2, perbaikan izin S3, dan investigasi performa jaringan), di luar tugas rekayasa perangkat lunak inti seperti pembuatan kode, pengujian, atau perbaikan program. Penulis sendiri menegaskan bahwa evaluasi difokuskan khusus pada CloudOps dan belum diterapkan ke paradigma seperti code generation."
+    },
+    "modelB": {
+      "paper_id": "P0093",
+      "decision": "EXCLUDE",
+      "ec": "EC5",
+      "evidence_section": "Section 2 (Motivation), Section 4.1 (Experimental Setup), and Section 5.1 (Threats to Validity)",
+      "rationale": "Makalah ini mengkaji kerangka evaluasi sistem agen AI yang diuji secara spesifik pada kasus operasional CloudOps murni (seperti optimasi biaya EC2 dan remediasi izin bucket S3 di AWS), yang berada di luar domain rekayasa perangkat lunak inti sesuai batasan EC5."
+    },
+    "agreement": true,
+    "is_disagreement": true,
+    "modelC": {
+      "decision": "INCLUDE",
+      "ec": "-",
+      "paper_id": "P0093",
+      "rationale": "Framework asesmen empat pilar (LLM, memori, tools, environment) untuk sistem agentic/multi-agent yang divalidasi empiris-kuantitatif pada tiga skenario Autonomous CloudOps termasuk RCA multi-agent."
+    },
+    "unanimous": false,
+    "majority_decision": "EXCLUDE",
+    "agreed_count": 2
+  },
+  {
+    "no": 13,
+    "paper_id": "P0958",
+    "title": "Asuka-Bench: Benchmarking Code Agents on Underspecified User Intent and Multi-Round Refinement",
+    "year": 2026,
+    "venue": "arXiv (Cornell University)",
+    "doi": "10.48550/arxiv.2606.05920",
+    "pdf_path": "02_slr/retrieval/pdfs/P0958.pdf",
+    "abstract_short": "Existing code-generation benchmarks score a single mapping from a complete prompt to a one-shot output. However, real web development is different. Users seldom write a full spec at the start; many requirements only become clear once they look at an intermediate result and react to it. We present Asuka-Bench, a benchmark that pairs underspecified user intent with multi-round refinement, grounded in browser-rendered behavior. Each task is resolved through a closed loop: a Code Agent generates a web project, a UI Agent executes test cases on the deployed site, and a User LLM turns evaluation out",
+    "is_control": false,
+    "modelA": {
+      "paper_id": "P0958",
+      "decision": "EXCLUDE",
+      "ec": "EC3",
+      "evidence_section": "Section 1, Section 3.1, and Section 4.1",
+      "rationale": "Makalah ini mengusulkan sebuah benchmark (Asuka-Bench) untuk mengevaluasi kinerja agen kode berbasis single-agent (menggunakan kerangka kerja OpenHands dan Claude Code). Komponen UI Agent dan User LLM hanya berfungsi sebagai evaluation harness atau simulator penguji/pengguna otomatis, bukan sistem atau arsitektur multi-agent LLM yang berkolaborasi untuk menyelesaikan tugas software engineering."
+    },
+    "modelB": {
+      "paper_id": "P0958",
+      "decision": "INCLUDE",
+      "ec": "-",
+      "evidence_section": "Section 1 (Introduction), Section 3.1 (Evaluation Framework), and Section 4 (Experiments and Results)",
+      "rationale": "Makalah ini mengkaji interaksi dan feedback loop multi-agent (Code Agent, UI Agent, dan User LLM) untuk tugas software engineering berupa generasi dan perbaikan kode aplikasi web secara iteratif. Studi ini menyajikan evaluasi empiris kuantitatif yang komprehensif pada 50 proyek web (784 tugas evaluasi) terhadap 8 model LLM menggunakan metrik terukur seperti Task Pass Rate dan Project Completion Rate."
+    },
+    "agreement": false,
+    "is_disagreement": true,
+    "modelC": {
+      "decision": "INCLUDE",
+      "ec": "-",
+      "paper_id": "P0958",
+      "rationale": "Benchmark 50 tugas web dengan closed-loop Code Agent-UI Agent-User LLM (feedback loop multi-round) dan evaluasi kuantitatif 8 LLM pada 2 framework agen."
+    },
+    "unanimous": false,
+    "majority_decision": "INCLUDE",
+    "agreed_count": 2
+  },
+  {
+    "no": 14,
+    "paper_id": "P0866",
+    "title": "Demonstrating GenDB: Instance-Optimized and Customized Query Processing Code Generation via LLM Agents",
+    "year": 2026,
+    "venue": "arXiv (Cornell University)",
+    "doi": "10.48550/arxiv.2607.20630",
+    "pdf_path": "02_slr/retrieval/pdfs/P0866.pdf",
+    "abstract_short": "Traditional query processing engines require continuous development and extensions to support new techniques and user requirements, and in some cases, entirely new systems must be built from scratch. However, these engines are difficult to extend due to their internal complexity, and building new systems demands significant engineering effort and cost. To address this, we demonstrate GenDB, a generative query engine that shifts query processing from manually engineered systems to query processing code generation driven by Large Language Models (LLMs). An early prototype of GenDB uses LLM agent",
+    "is_control": false,
+    "modelA": {
+      "paper_id": "P0866",
+      "decision": "EXCLUDE",
+      "ec": "EC5",
+      "evidence_section": "Section 1 (Introduction) dan Section 2 (System Overview)",
+      "rationale": "GenDB merupakan sistem query engine generatif untuk pemrosesan dan optimasi kueri basis data (database query processing) yang dievaluasi performa latensinya terhadap sistem DBMS (DuckDB, ClickHouse, Umbra) menggunakan benchmark OLAP (TPC-H dan SEC-EDGAR), sehingga berada di luar domain software engineering."
+    },
+    "modelB": {
+      "paper_id": "P0866",
+      "decision": "INCLUDE",
+      "ec": "-",
+      "evidence_section": "Section 2 (System Overview) and Section 3 (Extract of Experimental Evaluation)",
+      "rationale": "Makalah ini mengusulkan GenDB, sebuah sistem multi-agent LLM dengan agen khusus (Workload Analyzer, Storage Designer, Query Planner, Code Generator, Query Optimizer) dan feedback loop iteratif untuk menghasilkan serta mengoptimasi kode pemrosesan kueri (C++), yang dievaluasi secara kuantitatif pada benchmark TPC-H dan SEC-EDGAR."
+    },
+    "agreement": false,
+    "is_disagreement": true,
+    "modelC": {
+      "decision": "INCLUDE",
+      "ec": "-",
+      "paper_id": "P0866",
+      "rationale": "Workflow multi-agent (analyzer-designer-planner-generator-optimizer) untuk generasi kode query processing dengan evaluasi kuantitatif TPC-H/SEC-EDGAR dan optimizer feedback iteratif."
+    },
+    "unanimous": false,
+    "majority_decision": "INCLUDE",
+    "agreed_count": 2
+  },
+  {
+    "no": 15,
+    "paper_id": "P0404",
+    "title": "Balancing autonomy and oversight in reliable agentic artificial intelligence through adaptive human interaction architectures",
+    "year": 2026,
+    "venue": "Discover Artificial Intelligence",
+    "doi": "10.1007/s44163-026-01373-2",
+    "pdf_path": "02_slr/retrieval/pdfs/P0404.pdf",
+    "abstract_short": "The transition from generative to agentic artificial intelligence has enabled autonomous systems to plan, reason, and execute complex multi-step workflows without direct human supervision. While this capability offers significant productivity gains across regulated enterprise domains-financial services, clinical operations, and software engineering-deploying these systems responsibly remains a fundamental governance challenge. Known failure modes, including hallucination propagation, goal misalignment, and cascading execution errors, can compound across long task sequences in ways that static ",
+    "is_control": true,
+    "modelA": {
+      "paper_id": "P0404",
+      "decision": "INCLUDE",
+      "ec": "-",
+      "evidence_section": "Section 5.1.1, Section 5.3, Section 6.1, and Table 3",
+      "rationale": "Makalah ini mengusulkan dan mengevaluasi arsitektur multi-agent hierarkis (Supervisor-Worker) yang menerapkan selective approval gate dan feedback loop koreksi diri pada tugas enterprise termasuk rekayasa perangkat lunak (1.500 tugas code generation, refactoring, bug fixing, dan unit testing). Evaluasi empiris kuantitatif komprehensif disajikan dengan metrik success rate, latency, dan human intervention rate."
+    },
+    "modelB": {
+      "paper_id": "P0404",
+      "decision": "INCLUDE",
+      "ec": "-",
+      "evidence_section": "Section 5.1.1 High-level architecture, Section 6.1 Dataset construction and validation, Table 3",
+      "rationale": "Makalah ini mengusulkan arsitektur multi-agent hierarkis (Supervisor-Worker) dengan selective approval gate adaptif berbasis skor keyakinan kontekstual dan mengevaluasi kinerjanya secara kuantitatif pada 1.500 tugas software engineering (seperti code generation, bug fixing, refactoring, dan unit testing)."
+    },
+    "agreement": true,
+    "is_disagreement": false,
+    "modelC": {
+      "decision": "INCLUDE",
+      "ec": "-",
+      "paper_id": "P0404",
+      "rationale": "Arsitektur hierarkis Supervisor-Worker dengan selective approval gate berbasis Contextual Confidence Score dan DPO feedback loop, dievaluasi kuantitatif pada 5000 tugas termasuk code generation."
+    },
+    "unanimous": true,
+    "majority_decision": "INCLUDE",
+    "agreed_count": 3
+  },
+  {
+    "no": 16,
+    "paper_id": "P1453",
+    "title": "Testing and Understanding Erroneous Planning in LLM Agents through Synthesized User Inputs",
+    "year": 2024,
+    "venue": "arXiv (Cornell University)",
+    "doi": "10.48550/arxiv.2404.17833",
+    "pdf_path": "02_slr/retrieval/pdfs/P1453.pdf",
+    "abstract_short": "Agents based on large language models (LLMs) have demonstrated effectiveness in solving a wide range of tasks by integrating LLMs with key modules such as planning, memory, and tool usage. Increasingly, customers are adopting LLM agents across a variety of commercial applications critical to reliability, including support for mental well-being, chemical synthesis, and software development. Nevertheless, our observations and daily use of LLM agents indicate that they are prone to making erroneous plans, especially when the tasks are complex and require long-term planning. In this paper, we prop",
+    "is_control": false,
+    "modelA": {
+      "paper_id": "P1453",
+      "decision": "EXCLUDE",
+      "ec": "EC3",
+      "evidence_section": "Section 2.3 Architecture of LLM Agents & Section 5 Implementation and Experiment Setup",
+      "rationale": "Penelitian ini mengevaluasi kapabilitas perencanaan pada kerangka kerja agen tunggal (single-agent) seperti ReAct, OpenAI Tools, dan OpenAI Assistant, bukan sistem atau koordinasi multi-agent."
+    },
+    "modelB": {
+      "paper_id": "P1453",
+      "decision": "EXCLUDE",
+      "ec": "EC3",
+      "evidence_section": "Section 5 (LLM Agent Frameworks) & Table 1",
+      "rationale": "Makalah ini berfokus pada pengujian kemampuan perencanaan pada arsitektur agen LLM tunggal (single-agent) seperti ReAct, OpenAI Tools, dan OpenAI Assistant, bukan sistem kolaboratif multi-agent."
+    },
+    "agreement": true,
+    "is_disagreement": false,
+    "modelC": {
+      "decision": "EXCLUDE",
+      "ec": "EC3",
+      "paper_id": "P1453",
+      "rationale": "PDoctor menguji planning agen tunggal (ReAct, OpenAI Tools, Assistant diuji individual) pada tugas generik sintetis mock-tool/Z3 tanpa koordinasi multi-agen untuk tugas SE."
+    },
+    "unanimous": true,
+    "majority_decision": "EXCLUDE",
+    "agreed_count": 3
+  },
+  {
+    "no": 17,
+    "paper_id": "P0176",
+    "title": "Self-Evolving AI Agents With Dual Memory for Automated Software Testing and Bug Localization",
+    "year": 2026,
+    "venue": "IEEE Access",
+    "doi": "10.1109/access.2026.3713401",
+    "pdf_path": "02_slr/retrieval/pdfs/P0176.pdf",
+    "abstract_short": "Large Language Model (LLM)-based autonomous agents have shown significant promise in automating software engineering tasks, yet existing systems still suffer from two fundamental limitations: i) the lack of persistent experiential knowledge across debugging sessions, which forces agents to repeat exploratory mistakes, and ii) the static nature of prompt structures, which prevents agents from adapting their reasoning strategy to recurring failure modes. To address these gaps, we propose LS-CM (Long-Short Collaborative Memory), a dual-memory architecture that couples a Retrieval-Augmented Genera",
+    "is_control": false,
+    "modelA": {
+      "paper_id": "P0176",
+      "decision": "EXCLUDE",
+      "ec": "EC3",
+      "evidence_section": "Section IV-A & Section VI-B",
+      "rationale": "LS-CM merupakan arsitektur single-agent yang mengandalkan satu LLM executor dengan dukungan modul memori retrieval/MLP dan kontroler LinUCB, bukan sistem multi-agent LLM. Penulis bahkan secara eksplisit mencantumkan integrasi ke kerangka multi-agent (seperti ChatDev) sebagai rencana pekerjaan di masa depan (future work)."
+    },
+    "modelB": {
+      "paper_id": "P0176",
+      "decision": "EXCLUDE",
+      "ec": "EC3",
+      "evidence_section": "Section IV-A & Section VI-B",
+      "rationale": "Penelitian ini mengusulkan arsitektur agen LLM tunggal (single-agent) yang dilengkapi modul memori ganda (STM dan LTM) serta kontroler bandit (SECE), bukan sistem multi-agent LLM. Integrasi ke kerangka kerja multi-agent secara eksplisit disebutkan baru sebatas rencana penelitian masa depan (future work)."
+    },
+    "agreement": true,
+    "is_disagreement": false,
+    "modelC": {
+      "decision": "EXCLUDE",
+      "ec": "EC3",
+      "paper_id": "P0176",
+      "rationale": "LS-CM adalah satu agen otonom (satu LLM executor + modul memori STM/LTM/SECE) tanpa koordinasi antar-agen; kolaborasi multi-agen dinyatakan eksplisit sebagai future work."
+    },
+    "unanimous": true,
+    "majority_decision": "EXCLUDE",
+    "agreed_count": 3
+  },
+  {
+    "no": 18,
+    "paper_id": "P1566",
+    "title": "LLMoxie: Exploring Agentic AI for Scientific Software Development",
+    "year": 2026,
+    "venue": "arXiv (Cornell University)",
+    "doi": "10.48550/arxiv.2607.02703",
+    "pdf_path": "02_slr/retrieval/pdfs/P1566.pdf",
+    "abstract_short": "In this paper, we describe LLMoxie, an institutional AI platform whose three-tiered architecture supports multi-cloud and on-premise inference, a LiteLLM/MLflow control plane for authentication, budgeting, PII masking, and observability, and an application augmentation layer for AI coding agents. Layered on top, an open-source RSE-Plugins ecosystem encodes accumulated RSE knowledge as a Plugin-Agent-Skill hierarchy spanning scientific Python practice, domain-specific knowledge, a six-phase research-and-implement workflow, and project lifecycle management. Scientific software is judged less by ",
+    "is_control": false,
+    "modelA": {
+      "paper_id": "P1566",
+      "decision": "EXCLUDE",
+      "ec": "EC2",
+      "evidence_section": "Section 7 Limitations, Page 8",
+      "rationale": "Makalah ini merupakan laporan arsitektur platform dan pengalaman praktisi tanpa evaluasi eksperimental primer kuantitatif; penulis secara eksplisit mengakui bahwa studi ini tidak menyajikan pengukuran kuantitatif produktivitas, kualitas kode, atau luaran ilmiah ('we do not report quantitative measures of productivity, code quality, or scientific output, and a more formal evaluation is an obvious next step')."
+    },
+    "modelB": {
+      "paper_id": "P1566",
+      "decision": "EXCLUDE",
+      "ec": "EC2",
+      "evidence_section": "Section 7 Limitations",
+      "rationale": "Makalah ini merupakan laporan pengalaman/sistem yang secara eksplisit mengakui tidak menyajikan evaluasi empiris kuantitatif terkait produktivitas, kualitas kode, maupun luaran saintifik ('we do not report quantitative measures of productivity, code quality, or scientific output'). Selain itu, sistem ini dirancang sebagai augmentasi plugin/skill untuk satu coding agent monolitik (Claude Code)."
+    },
+    "agreement": true,
+    "is_disagreement": false,
+    "modelC": {
+      "decision": "EXCLUDE",
+      "ec": "EC3",
+      "paper_id": "P1566",
+      "rationale": "LLMoxie memakai satu coding agent (Claude Code) berlapis plugin/skill RSE sebagai experience report platform tanpa koordinasi multi-agen dan tanpa evaluasi kuantitatif koordinasi."
+    },
+    "unanimous": true,
+    "majority_decision": "EXCLUDE",
+    "agreed_count": 3
+  },
+  {
+    "no": 19,
+    "paper_id": "P0507",
+    "title": "MAGIS: LLM-Based Multi-Agent Framework for GitHub Issue ReSolution",
+    "year": 2024,
+    "venue": "Advances in Neural Information Processing Systems",
+    "doi": "10.48550/arxiv.2403.17927",
+    "pdf_path": "02_slr/retrieval/pdfs/P0507.pdf",
+    "abstract_short": "In software development, resolving the emergent issues within GitHub repositories is a complex challenge that involves not only the incorporation of new code but also the maintenance of existing code. Large Language Models (LLMs) have shown promise in code generation but face difficulties in resolving Github issues, particularly at the repository level. To overcome this challenge, we empirically study the reason why LLMs fail to resolve GitHub issues and analyze the major factors. Motivated by the empirical findings, we propose a novel LLM-based Multi-Agent framework for GitHub Issue reSolutio",
+    "is_control": true,
+    "modelA": {
+      "paper_id": "P0507",
+      "decision": "INCLUDE",
+      "ec": "-",
+      "evidence_section": "Section 1 (Introduction), Section 3 (Methodology), dan Section 4 (Experiments and Analysis)",
+      "rationale": "Makalah ini mengusulkan MAGIS, sebuah framework multi-agent LLM (Manager, Repository Custodian, Developer, dan QA Engineer) dengan mekanisme kolaborasi, kick-off meeting, dan feedback loop untuk GitHub issue resolution. Kinerjanya dievaluasi secara empiris kuantitatif pada benchmark SWE-bench."
+    },
+    "modelB": {
+      "paper_id": "P0507",
+      "decision": "INCLUDE",
+      "ec": "-",
+      "evidence_section": "Section 1 (Abstract & Introduction), Section 3 (Methodology), Section 4 (Experiments and Analysis, Table 2)",
+      "rationale": "Makalah ini mengusulkan kerangka kerja multi-agent LLM bernama MAGIS yang melibatkan empat peran agen (Manager, Repository Custodian, Developer, dan QA Engineer) dengan mekanisme koordinasi serta feedback loop peninjauan kode, yang dievaluasi secara empiris kuantitatif menggunakan SWE-bench."
+    },
+    "agreement": true,
+    "is_disagreement": false,
+    "modelC": {
+      "decision": "INCLUDE",
+      "ec": "-",
+      "paper_id": "P0507",
+      "rationale": "Framework 4 agen (Manager, Custodian, Developer, QA) berkolaborasi planning-coding untuk resolusi GitHub issue dengan evaluasi kuantitatif SWE-bench 13,94%."
+    },
+    "unanimous": true,
+    "majority_decision": "INCLUDE",
+    "agreed_count": 3
+  },
+  {
+    "no": 20,
+    "paper_id": "P0531",
+    "title": "Simulation-based Integrated Transportation Planning in Panelized Construction",
+    "year": 2025,
+    "venue": "Proceedings of the International Symposium on Automation and Robotics in Construction",
+    "doi": "10.22260/isarc2025/0153",
+    "pdf_path": "02_slr/retrieval/pdfs/P0531.pdf",
+    "abstract_short": "Panelized construction is an offsite construction approach that offers enhanced design flexibility and cost-effective assembly. Despite these advantages, it faces challenges due to a fragmented supply chain (SC) and transportation coordination issues that can lead to cost overruns and schedule delays. To address these challenges, this study introduces a transportation planning method that leverages Just-In-Time principles and hybrid multi-agent simulation to align factory and onsite operations across multiple projects through integrated transportation procedures. These procedures categorize SC",
+    "is_control": false,
+    "modelA": {
+      "paper_id": "P0531",
+      "decision": "EXCLUDE",
+      "ec": "EC5",
+      "evidence_section": "Keywords & Abstract",
+      "rationale": "Makalah ini berfokus pada simulasi berbasis agen (ABM) dan kejadian diskret untuk perencanaan transportasi logistik pada industri konstruksi (civil engineering), bukan sistem Multi-Agent LLM untuk rekayasa perangkat lunak (Software Engineering)."
+    },
+    "modelB": {
+      "paper_id": "P0531",
+      "decision": "EXCLUDE",
+      "ec": "EC5",
+      "evidence_section": "Abstract & Section 1 Introduction",
+      "rationale": "Makalah ini membahas perencanaan transportasi dan rantai pasok pada konstruksi panel (civil/construction engineering) menggunakan simulasi berbasis agen klasik (ABM) dan Discrete-Event Simulation (DES), berada di luar domain software engineering serta tidak menggunakan Multi-Agent LLM."
+    },
+    "agreement": true,
+    "is_disagreement": false,
+    "modelC": {
+      "decision": "EXCLUDE",
+      "ec": "EC5",
+      "paper_id": "P0531",
+      "rationale": "Simulasi multi-agen ABM untuk logistik konstruksi panel (trailer/truk) tanpa LLM dan di luar domain rekayasa perangkat lunak."
+    },
+    "unanimous": true,
+    "majority_decision": "EXCLUDE",
+    "agreed_count": 3
+  },
+  {
+    "no": 21,
+    "paper_id": "P1622",
+    "title": "Building an AI-Native Software Engineering Team: A Stepwise Approach Using Multi-Agent Systems",
+    "year": 2024,
+    "venue": "International Journal of Computer Applications",
+    "doi": "10.5120/ijca2024923651",
+    "pdf_path": "02_slr/retrieval/pdfs/P1622.pdf",
+    "abstract_short": "The realm of Generative Artificial Intelligence (Gen AI) has propelled human ingenuity to unprecedented heights, promising to revolutionize the field of software engineering.Large Language Models (LLMs) and Generative Pre-trained Transformers are at the forefront of this transformation, reshaping the landscape of Software Engineering.With the integration of multi-agent systems, the evolution of software engineering is poised to accelerate even further.Multiple generative agents interacting with each other can handle not only basic tasks like coding, debugging, and scripting, but also creativit",
+    "is_control": false,
+    "modelA": {
+      "paper_id": "P1622",
+      "decision": "EXCLUDE",
+      "ec": "EC2",
+      "evidence_section": "Section 3. Proposed Framework & Section 4. Conclusion",
+      "rationale": "Makalah ini merupakan position/conceptual paper yang mengusulkan kerangka kerja konseptual pengadopsian tim AI multi-agen ke dalam SDLC tanpa menyajikan evaluasi empiris kuantitatif konkret atau pengujian eksperimental pada benchmark/repositori nyata (hanya menyajikan daftar metrik teoretis pada Gambar 6)."
+    },
+    "modelB": {
+      "paper_id": "P1622",
+      "decision": "EXCLUDE",
+      "ec": "EC2",
+      "evidence_section": "Section 3. Proposed Framework & Figure 6: Metrics and Factors for evaluation",
+      "rationale": "Makalah ini merupakan position paper konseptual yang mengusulkan panduan langkah-langkah adopsi tim multi-agent tanpa menyajikan implementasi eksperimental atau evaluasi empiris kuantitatif konkret."
+    },
+    "agreement": true,
+    "is_disagreement": false,
+    "modelC": {
+      "decision": "EXCLUDE",
+      "ec": "EC2",
+      "paper_id": "P1622",
+      "rationale": "Paper visi/framework stepwise AI-native team berbasis multi-agent tanpa evaluasi empiris kuantitatif, hanya usulan fase dan milestone."
+    },
+    "unanimous": true,
+    "majority_decision": "EXCLUDE",
+    "agreed_count": 3
+  },
+  {
+    "no": 22,
+    "paper_id": "P4238",
+    "title": "Design and Implementation of Physical Education Teaching Management System Based on Multi-agent Model",
+    "year": 2023,
+    "venue": "International Journal of Computational Intelligence Systems",
+    "doi": "10.1007/s44196-023-00349-9",
+    "pdf_path": "02_slr/retrieval/pdfs/P4238.pdf",
+    "abstract_short": "",
+    "is_control": false,
+    "modelA": {
+      "paper_id": "P4238",
+      "decision": "EXCLUDE",
+      "ec": "EC5",
+      "evidence_section": "Abstract / Section 3: Design of Sports Teaching Management System Based on Multi-agent Model",
+      "rationale": "Makalah ini berfokus pada pengembangan sistem manajemen pengajaran pendidikan jasmani (physical education) menggunakan multi-agent berbasis JADE, bukan penerapan Multi-Agent LLM untuk tugas-tugas Software Engineering."
+    },
+    "modelB": {
+      "paper_id": "P4238",
+      "decision": "EXCLUDE",
+      "ec": "EC5",
+      "evidence_section": "Abstract & Section 3 Design of Sports Teaching Management System Based on Multi-agent Model",
+      "rationale": "Makalah ini berfokus pada perancangan sistem manajemen pengajaran pendidikan jasmani (physical education) menggunakan platform multi-agen tradisional (JADE), bukan sistem Multi-Agent LLM untuk tugas rekayasa perangkat lunak (Software Engineering)."
+    },
+    "agreement": true,
+    "is_disagreement": false,
+    "modelC": {
+      "decision": "EXCLUDE",
+      "ec": "EC5",
+      "paper_id": "P4238",
+      "rationale": "Sistem manajemen pengajaran pendidikan jasmani berbasis agen klasik JADE, bukan LLM untuk tugas Software Engineering."
+    },
+    "unanimous": true,
+    "majority_decision": "EXCLUDE",
+    "agreed_count": 3
+  },
+  {
+    "no": 23,
+    "paper_id": "P0203",
+    "title": "Observability and Fault Injection for LLM-Based Multi-Agent Systems in Software Engineering",
+    "year": 2026,
+    "venue": "Proceedings - 2026 IEEE International Conference on Software Testing, Verification and Validation, ICST 2026",
+    "doi": "10.1109/icst69053.2026.00037",
+    "pdf_path": "02_slr/retrieval/pdfs/P0203.pdf",
+    "abstract_short": "Large Language Model-based multi-agent systems are increasingly explored for software engineering tasks, but they remain difficult to inspect, debug, and evaluate under controlled failures. We present llmmas-otel, a lightweight and framework-agnostic tool that combines OpenTelemetrybased distributed tracing with fault injection for LLM-based multi-agent systems in software engineering workflows. The tool instruments agent executions with trace-aligned telemetry across workflow phases, agent steps, inter-agent communication, tool calls, and LLM invocations, and supports targeted fault injection",
+    "is_control": false,
+    "modelA": {
+      "paper_id": "P0203",
+      "decision": "INCLUDE",
+      "ec": "-",
+      "evidence_section": "Section I, Section II-B, and Section III",
+      "rationale": "Makalah ini mengkaji observabilitas dan fault injection pada sistem multi-agent LLM untuk software engineering (termasuk ChatDev), menganalisis komunikasi dan koordinasi antar-agen (A2A handoffs), serta menyertakan evaluasi empiris kuantitatif menggunakan benchmark ProgramDev."
+    },
+    "modelB": {
+      "paper_id": "P0203",
+      "decision": "INCLUDE",
+      "ec": "-",
+      "evidence_section": "Section I, Section II, and Section III",
+      "rationale": "Makalah ini mengkaji komunikasi, koordinasi, dan observabilitas sistem multi-agent LLM untuk tugas rekayasa perangkat lunak serta menyajikan evaluasi empiris kuantitatif menggunakan benchmark ProgramDev (30 tugas) pada alur kerja Planner-Coder dan ChatDev."
+    },
+    "agreement": true,
+    "is_disagreement": false,
+    "modelC": {
+      "decision": "INCLUDE",
+      "ec": "-",
+      "paper_id": "P0203",
+      "rationale": "Tool llmmas-otel untuk LLM-MAS SE (Planner-Coder, ChatDev) dengan tracing OpenTelemetry, fault injection, dan validasi kuantitatif amplifikasi pada 30 tugas ProgramDev."
+    },
+    "unanimous": true,
+    "majority_decision": "INCLUDE",
+    "agreed_count": 3
+  },
+  {
+    "no": 24,
+    "paper_id": "P0112",
+    "title": "CoSQA+: Enhancing Code Search Evaluation With a Multi-Choice Benchmark and Test-Driven Agents",
+    "year": 2026,
+    "venue": "IEEE Transactions on Software Engineering",
+    "doi": "10.1109/tse.2025.3631886",
+    "pdf_path": "02_slr/retrieval/pdfs/P0112.pdf",
+    "abstract_short": "Semantic code search, retrieving code that matches a given natural language query, is an important task to improve productivity in software engineering. Existing code search datasets face limitations: they rely on human annotators who assess code primarily through semantic understanding rather than functional verification, leading to potential inaccuracies and scalability issues. Additionally, current evaluation metrics often overlook the multi-choice nature of code search. This paper introduces CoSQA+, pairing high-quality queries from CoSQA with multiple suitable codes. We develop an automat",
+    "is_control": false,
+    "modelA": {
+      "paper_id": "P0112",
+      "decision": "INCLUDE",
+      "ec": "-",
+      "evidence_section": "Section IV-C and Section V-D",
+      "rationale": "Makalah ini mengusulkan arsitektur Multi-Agent LLM (Preliminary Screener, Test Program Generator, Bug Fixer, dan Final Arbiter) yang mengintegrasikan selective gate dan feedback loop perbaikan tes untuk verifikasi fungsional dan anotasi pencarian kode SE. Kinerjanya dievaluasi secara kuantitatif melalui studi ablasi komponen multi-agent serta perbandingan terhadap model single-LLM dan pakar manusia."
+    },
+    "modelB": {
+      "paper_id": "P0112",
+      "decision": "INCLUDE",
+      "ec": "-",
+      "evidence_section": "Section IV-C (Test-Driven Agents Annotation), Section V (Evaluation, RQ2 & RQ4)",
+      "rationale": "Makalah ini mengusulkan arsitektur Multi-Agent LLM test-driven (Preliminary Screener, Test Program Generator, Test Executor, Bug Fixer, dan Final Arbiter) dengan mekanisme feedback loop eksekusi dan selective gate untuk tugas software engineering (code search dan test-driven verification). Sistem dievaluasi secara empiris kuantitatif melalui benchmark CoSQA+ (412.080 pasangan data) dan studi ablasi komponen agen dengan metrik akurasi, MAP@10, dan MRR."
+    },
+    "agreement": true,
+    "is_disagreement": false,
+    "modelC": {
+      "decision": "INCLUDE",
+      "ec": "-",
+      "paper_id": "P0112",
+      "rationale": "Benchmark CoSQA+ untuk code search multi-choice dengan pipeline test-driven agents (screener-generator-executor-fixer-arbiter) dan eksperimen ekstensif akurasi 93,9%."
+    },
+    "unanimous": true,
+    "majority_decision": "INCLUDE",
+    "agreed_count": 3
+  },
+  {
+    "no": 25,
+    "paper_id": "P1370",
+    "title": "RedCoder: Automated Multi-Turn Red Teaming for Code LLMs",
+    "year": 2025,
+    "venue": "",
+    "doi": "",
+    "pdf_path": "02_slr/retrieval/pdfs/P1370.pdf",
+    "abstract_short": "Large Language Models (LLMs) for code generation (i.e., Code LLMs) have demonstrated impressive capabilities in AI-assisted software development and testing. However, recent studies have shown that these models are prone to generating vulnerable or even malicious code under adversarial settings. Existing red-teaming approaches rely on extensive human effort, limiting their scalability and practicality, and generally overlook the interactive nature of real-world AI-assisted programming, which often unfolds over multiple turns. To bridge these gaps, we present RedCoder, a red-teaming agent that ",
+    "is_control": false,
+    "modelA": {
+      "paper_id": "P1370",
+      "decision": "EXCLUDE",
+      "ec": "EC3",
+      "evidence_section": "Section 1, Section 2.1, and Section 2.4",
+      "rationale": "Sistem yang diusulkan, diterapkan, dan dievaluasi (REDCODER) merupakan agen tunggal (single red-teaming agent) berbasis LLM ter-fine-tune dengan RAG yang berinteraksi langsung dengan model target. Proses multi-agent hanya dimanfaatkan secara offline sebagai metode sintesis data latih (gaming process) dan bukan sebagai arsitektur sistem multi-agent yang berkolaborasi saat inferensi/deployment."
+    },
+    "modelB": {
+      "paper_id": "P1370",
+      "decision": "INCLUDE",
+      "ec": "-",
+      "evidence_section": "Section 2.2 Multi-Agent Gaming & Table 1",
+      "rationale": "Makalah ini mengusulkan arsitektur multi-agent LLM yang melibatkan Attacker, Defender, Evaluator, dan Strategy Analyst dengan feedback loop untuk security red teaming pada Code LLMs. Kerangka kerja ini dievaluasi secara empiris dan kuantitatif menggunakan benchmark 170 coding tasks pada berbagai Code LLM."
+    },
+    "agreement": false,
+    "is_disagreement": true,
+    "modelC": {
+      "decision": "INCLUDE",
+      "ec": "-",
+      "paper_id": "P1370",
+      "rationale": "RedCoder red-teaming multi-turn untuk Code LLM yang dibangun via multi-agent gaming (attacker-defender-evaluator-analyst) dengan evaluasi 170 tugas dan 43 CWE."
+    },
+    "unanimous": false,
+    "majority_decision": "INCLUDE",
+    "agreed_count": 2
+  },
+  {
+    "no": 26,
+    "paper_id": "P1463",
+    "title": "CodePori: Large-Scale System for Autonomous Software Development Using Multi-Agent Technology",
+    "year": 2024,
+    "venue": "Research Square",
+    "doi": "10.21203/rs.3.rs-9701113/v1",
+    "pdf_path": "02_slr/retrieval/pdfs/P1463.pdf",
+    "abstract_short": "Context: LLM-based multi-agent systems enable automation and decision support in software development, yet existing studies rely on benchmark datasets offering only binary pass-or-fail results, limiting insight into real-world applicability. Objective: This study empirically investigates the potential and limitations of LLM-based agents in autonomous software development tasks. Method: A two-phase approach was employed: developing a multi-agent system, CodePori, for automated code generation, and conducting participant-based evaluation to assess practical performance. Results: Participant feed",
+    "is_control": false,
+    "modelA": {
+      "paper_id": "P1463",
+      "decision": "INCLUDE",
+      "ec": "-",
+      "evidence_section": "Section 4.2 Multi-Agent System Design, Section 4.3 Survey Design, and Section 5 Results",
+      "rationale": "Makalah ini mengusulkan arsitektur multi-agent LLM bernama CodePori yang menggunakan enam agen terspesialisasi dengan koordinasi dan feedback loop verifikasi untuk rekayasa perangkat lunak otonom skala besar. Kinerja sistem dievaluasi secara empiris kuantitatif melalui pengujian terhadap 590 proyek pengembangan perangkat lunak yang melibatkan 118 partisipan."
+    },
+    "modelB": {
+      "paper_id": "P1463",
+      "decision": "INCLUDE",
+      "ec": "-",
+      "evidence_section": "Section 4.2 Multi-Agent System Design & Section 5 Results",
+      "rationale": "Makalah ini mengusulkan CodePori, arsitektur multi-agent LLM kolaboratif yang terdiri dari 6 agen khusus untuk rekayasa perangkat lunak otonom (generasi kode multi-file), serta menyajikan evaluasi empiris kuantitatif berbasis survei dan analisis waktu eksekusi terhadap 118 partisipan dan 590 proyek."
+    },
+    "agreement": true,
+    "is_disagreement": false,
+    "modelC": {
+      "decision": "INCLUDE",
+      "ec": "-",
+      "paper_id": "P1463",
+      "rationale": "Sistem multi-agen LLM CodePori (6 agen: Manager, Architecture, Flow, Dev, Verification, Finalization + orkestrasi terpusat) untuk code generation skala besar dengan evaluasi kuantitatif deskriptif atas 118 partisipan/590 proyek (waktu rerata 9 mnt 14 dtk, distribusi rating)."
+    },
+    "unanimous": true,
+    "majority_decision": "INCLUDE",
+    "agreed_count": 3
+  },
+  {
+    "no": 27,
+    "paper_id": "P0998",
+    "title": "WebGameBench: Requirement-to-Application Evaluation for Coding Agents via Browser-Native Games",
+    "year": 2026,
+    "venue": "arXiv (Cornell University)",
+    "doi": "10.48550/arxiv.2605.17637",
+    "pdf_path": "02_slr/retrieval/pdfs/P0998.pdf",
+    "abstract_short": "Coding agents are increasingly used as application builders, yet many evaluations still focus on source code, repository-level tests, or intermediate traces rather than the delivered application. We introduce WebGameBench, a requirement-to-application benchmark that evaluates whether coding agents can turn a frozen Structured WebGame Specification into a browser-accessible game. Browser-native games provide a compact but behavior-dense testbed: even simple games require coordinated input handling, spatial mapping, rule execution, state transitions, terminal conditions, restart behavior, and vi",
+    "is_control": false,
+    "modelA": {
+      "paper_id": "P0998",
+      "decision": "EXCLUDE",
+      "ec": "EC3",
+      "evidence_section": "Section 3.1, Section 4.1, and Section D.1",
+      "rationale": "Makalah ini mengusulkan benchmark WebGameBench untuk mengevaluasi kinerja model/agen coding tunggal (seperti Claude Opus, GPT-5.5, Gemini 3.1 Pro, DeepSeek-V4) dalam menghasilkan aplikasi web game dari spesifikasi. Penelitian ini tidak mengusulkan ataupun mengkaji arsitektur, koordinasi, atau komunikasi multi-agent LLM, dan agen evaluator hanya bertindak sebagai penguji runtime terpisah tanpa feedback loop ke agen pembuat kode."
+    },
+    "modelB": {
+      "paper_id": "P0998",
+      "decision": "EXCLUDE",
+      "ec": "EC3",
+      "evidence_section": "Section 4.1 Experimental Setup & Table 1",
+      "rationale": "Makalah ini mengusulkan benchmark WebGameBench untuk mengevaluasi kemampuan koding agen tunggal/model LLM monolitik (seperti Claude Opus, GPT-5.5, DeepSeek-V4, dsb.) dalam membuat aplikasi game dari spesifikasi. Tidak ada arsitektur multi-agent LLM maupun mekanisme koordinasi dan komunikasi antar-agen yang diusulkan atau diteliti."
+    },
+    "agreement": true,
+    "is_disagreement": false,
+    "modelC": {
+      "decision": "EXCLUDE",
+      "ec": "EC3",
+      "paper_id": "P0998",
+      "rationale": "Benchmark requirement-to-application untuk coding agent tunggal (12 agen tunggal diuji mainkan game browser, 76,9% usable rate) tanpa mengusulkan sistem multi-agen berkoordinasi."
+    },
+    "unanimous": true,
+    "majority_decision": "EXCLUDE",
+    "agreed_count": 3
+  },
+  {
+    "no": 28,
+    "paper_id": "P1495",
+    "title": "Multi-Agent System for Cross-Platform PLC Code Generation with Domain Adaptation",
+    "year": 2025,
+    "venue": "International Journal of Emerging Technologies and Advanced Applications",
+    "doi": "10.62677/ijetaa.2510141",
+    "pdf_path": "02_slr/retrieval/pdfs/P1495.pdf",
+    "abstract_short": "Programmable Logic Controllers (PLCs) are fundamental to industrial automation systems. However, traditional PLC programming requires extensive domain expertise and significant time investment, while code reusability remains limited and cross-platform adaptation poses substantial challenges. With the rapid advancement of Large Language Models (LLMs), LLM-based code generation offers a promising approach to address these issues. Nevertheless, existing methods still face challenges when handling complex industrial scenarios, including insufficient domain knowledge, unstable code quality, and wea",
+    "is_control": false,
+    "modelA": {
+      "paper_id": "P1495",
+      "decision": "INCLUDE",
+      "ec": "-",
+      "evidence_section": "Section III-A, Section III-B, and Section IV-D (Table I)",
+      "rationale": "Makalah ini mengusulkan arsitektur multi-agent berbasis LLM (Requirement Analysis, Code Generation, Verification, dan Optimization Agent) dengan protokol koordinasi Contract Net untuk otomatisasi generasi kode PLC. Kinerjanya dievaluasi secara empiris dan kuantitatif pada dataset PLC-MultiTask menggunakan metrik seperti CSR, TPR, dan CodeBLEU."
+    },
+    "modelB": {
+      "paper_id": "P1495",
+      "decision": "INCLUDE",
+      "ec": "-",
+      "evidence_section": "Section III. METHODOLOGY (A. System Architecture & B. Multi-Agent Collaboration Mechanism) and Section IV. EXPERIMENTAL DESIGN",
+      "rationale": "Makalah ini mengusulkan sistem multi-agent berbasis LLM dengan koordinasi empat agen khusus untuk tugas rekayasa perangkat lunak (generasi kode PLC), dan menyertakan evaluasi empiris kuantitatif lengkap pada dataset PLC-MultiTask."
+    },
+    "agreement": true,
+    "is_disagreement": true,
+    "modelC": {
+      "decision": "EXCLUDE",
+      "ec": "EC5",
+      "paper_id": "P1495",
+      "rationale": "Sistem multi-agen 4 peran + RAG dengan evaluasi kuantitatif kuat (90,3% kompilasi, 87,6% lolos uji), tetapi domain PLC/otomasi industri (Siemens/Rockwell, robot handling bata) di luar tugas software engineering."
+    },
+    "unanimous": false,
+    "majority_decision": "INCLUDE",
+    "agreed_count": 2
+  },
+  {
+    "no": 29,
+    "paper_id": "P0666",
+    "title": "ChatDev: Communicative Agents for Software Development",
+    "year": 2024,
+    "venue": "Proceedings of the Annual Meeting of the Association for Computational Linguistics",
+    "doi": "10.18653/v1/2024.acl-long.810",
+    "pdf_path": "02_slr/retrieval/pdfs/P0666.pdf",
+    "abstract_short": "Software development is a complex task that necessitates cooperation among multiple members with diverse skills. Numerous studies used deep learning to improve specific phases in a waterfall model, such as design, coding, and testing. However, the deep learning model in each phase requires unique designs, leading to technical inconsistencies across various phases, which results in a fragmented and ineffective development process. In this paper, we introduce ChatDev, a chat-powered software development framework in which specialized agents driven by large language models (LLMs) are guided in wh",
+    "is_control": true,
+    "modelA": {
+      "paper_id": "P0666",
+      "decision": "INCLUDE",
+      "ec": "-",
+      "evidence_section": "Section 3 (ChatDev) & Section 4 (Evaluation)",
+      "rationale": "Makalah ini mengusulkan kerangka kerja multi-agent LLM bernama ChatDev untuk proses pengembangan perangkat lunak (desain, coding, testing) dengan koordinasi berbasis chat chain, serta dievaluasi secara empiris kuantitatif menggunakan dataset 1.200 tugas perangkat lunak terhadap metrik completeness, executability, consistency, dan quality."
+    },
+    "modelB": {
+      "paper_id": "P0666",
+      "decision": "INCLUDE",
+      "ec": "-",
+      "evidence_section": "Section 3 (ChatDev) & Section 4 (Evaluation)",
+      "rationale": "Makalah ini mengusulkan ChatDev, sebuah arsitektur multi-agent LLM dengan koordinasi peran terstruktur (chat chain dan dehallucination) untuk pengembangan perangkat lunak secara end-to-end, yang dievaluasi secara empiris kuantitatif menggunakan dataset 1.200 kebutuhan perangkat lunak (SRDD)."
+    },
+    "agreement": true,
+    "is_disagreement": false,
+    "modelC": {
+      "decision": "INCLUDE",
+      "ec": "-",
+      "paper_id": "P0666",
+      "rationale": "Framework ChatDev multi-agen LLM berperan (CEO/CTO/programmer/reviewer/tester) via chat chain + communicative dehallucination sebagai feedback loop, evaluasi kuantitatif vs GPT-Engineer/MetaGPT (eksekutabilitas 0,88, uji signifikan p≤0,05) + ablasi + human eval."
+    },
+    "unanimous": true,
+    "majority_decision": "INCLUDE",
+    "agreed_count": 3
+  },
+  {
+    "no": 30,
+    "paper_id": "P3422",
+    "title": "Accountability in multi-agent organizations: from conceptual design to agent programming",
+    "year": 2022,
+    "venue": "Autonomous Agents and Multi-Agent Systems",
+    "doi": "10.1007/s10458-022-09590-6",
+    "pdf_path": "02_slr/retrieval/pdfs/P3422.pdf",
+    "abstract_short": "",
+    "is_control": false,
+    "modelA": {
+      "paper_id": "P3422",
+      "decision": "EXCLUDE",
+      "ec": "EC5",
+      "evidence_section": "Section 1 / Section 6 Agent Programming",
+      "rationale": "Makalah ini mengkaji formalisasi akuntabilitas dan rekayasa multi-agent systems klasik (BDI/JaCaMo) pada domain umum seperti bakery, pengiriman barang, dan konstruksi rumah. Makalah tidak mengusulkan atau mengevaluasi sistem Multi-Agent berbasis LLM untuk tugas Software Engineering."
+    },
+    "modelB": {
+      "paper_id": "P3422",
+      "decision": "EXCLUDE",
+      "ec": "EC5",
+      "evidence_section": "Section 1 Introduction, Section 5 Extending JaCaMo with Accountability, Section 6 Agent Programming",
+      "rationale": "Makalah ini berfokus pada formalisasi akuntabilitas dan rekayasa sistem multi-agen simbolik/BDI tradisional berbasis JaCaMo/Jason/MOISE untuk sistem terdistribusi umum (dengan studi kasus bakery, logistik pengiriman, dan pembangunan rumah), bukan mengusulkan atau mengkaji arsitektur Multi-Agent LLM untuk tugas Software Engineering, serta tidak memuat evaluasi empiris kuantitatif."
+    },
+    "agreement": true,
+    "is_disagreement": false,
+    "modelC": {
+      "decision": "EXCLUDE",
+      "ec": "EC2",
+      "paper_id": "P3422",
+      "rationale": "Paper konseptual-formal accountability pada MAS klasik (JaCaMo, 2022) tanpa LLM dan tanpa evaluasi empiris kuantitatif, hanya ilustrasi konseptual."
+    },
+    "unanimous": true,
+    "majority_decision": "EXCLUDE",
+    "agreed_count": 3
+  },
+  {
+    "no": 31,
+    "paper_id": "P1901",
+    "title": "AI-Assisted Exploration, Curation, and Extension of Biodiversity Data Using iChatBio",
+    "year": 2025,
+    "venue": "Biodiversity Information Science and Standards",
+    "doi": "10.3897/biss.9.181968",
+    "pdf_path": "02_slr/retrieval/pdfs/P1901.pdf",
+    "abstract_short": "The ability of large language models (LLMs) to interact with their environment through function-calling mechanisms has enabled the development of agentic systems - artificial intelligence (AI) systems that can: understand natural language requests, create an action plan to address the response (e.g., retrieve data from an online source), execute the action plan through the use of tools , and then interpret the outcomes of their actions to generate natural language response. understand natural language requests, create an action plan to address the response (e.g., retrieve data from an online s",
+    "is_control": false,
+    "modelA": {
+      "paper_id": "P1901",
+      "decision": "EXCLUDE",
+      "ec": "EC5",
+      "evidence_section": "Abstract (halaman 1) dan use cases (halaman 2)",
+      "rationale": "Makalah ini berfokus pada sistem multi-agen untuk eksplorasi, kurasi, dan integrasi data keanekaragaman hayati (biodiversity data), bukan untuk tugas software engineering (EC5), serta naskah ini merupakan conference abstract berukuran pendek (3 halaman, EC6)."
+    },
+    "modelB": {
+      "paper_id": "P1901",
+      "decision": "EXCLUDE",
+      "ec": "EC6",
+      "evidence_section": "Page 1 ('Conference Abstract', 3 pages total)",
+      "rationale": "Naskah merupakan abstrak konferensi (Conference Abstract) dengan panjang hanya 3 halaman (< 4 halaman) dan berada di luar domain software engineering (eksplorasi dan kurasi data biodiversitas)."
+    },
+    "agreement": true,
+    "is_disagreement": false,
+    "modelC": {
+      "decision": "EXCLUDE",
+      "ec": "EC6",
+      "paper_id": "P1901",
+      "rationale": "Abstrak konferensi 3 halaman tentang data biodiversitas (iChatBio) tanpa tugas software engineering dan tanpa evaluasi empiris kuantitatif."
+    },
+    "unanimous": true,
+    "majority_decision": "EXCLUDE",
+    "agreed_count": 3
+  },
+  {
+    "no": 32,
+    "paper_id": "P1217",
+    "title": "PredictionMarketBench: A SWE-bench-Style Framework for Backtesting Trading Agents on Prediction Markets",
+    "year": 2026,
+    "venue": "arXiv (Cornell University)",
+    "doi": "10.48550/arxiv.2602.00133",
+    "pdf_path": "02_slr/retrieval/pdfs/P1217.pdf",
+    "abstract_short": "Prediction markets offer a natural testbed for trading agents: contracts have binary payoffs, prices can be interpreted as probabilities, and realized performance depends critically on market microstructure, fees, and settlement risk. We introduce PredictionMarketBench, a SWE-bench-style benchmark for evaluating algorithmic and LLM-based trading agents on prediction markets via deterministic, event-driven replay of historical limit-order-book and trade data. PredictionMarketBench standardizes (i) episode construction from raw exchange streams (orderbooks, trades, lifecycle, settlement), (ii) a",
+    "is_control": false,
+    "modelA": {
+      "paper_id": "P1217",
+      "decision": "EXCLUDE",
+      "ec": "EC5",
+      "evidence_section": "Abstract & Section 1 Introduction",
+      "rationale": "Makalah ini mengusulkan framework backtesting untuk agen trading di pasar prediksi finansial (Kalshi), sehingga sepenuhnya berada di luar domain software engineering."
+    },
+    "modelB": {
+      "paper_id": "P1217",
+      "decision": "EXCLUDE",
+      "ec": "EC5",
+      "evidence_section": "Abstract & Section 1 (Introduction)",
+      "rationale": "Makalah ini berfokus pada backtesting dan evaluasi agen trading (finansial/pasar prediksi) pada data pasar Kalshi, bukan untuk tugas Rekayasa Perangkat Lunak (Software Engineering)."
+    },
+    "agreement": true,
+    "is_disagreement": false,
+    "modelC": {
+      "decision": "EXCLUDE",
+      "ec": "EC5",
+      "paper_id": "P1217",
+      "rationale": "Benchmark agen trading pasar prediksi (finansial) dengan satu agen LLM tool-calling, bukan multi-agent LLM untuk software engineering."
+    },
+    "unanimous": true,
+    "majority_decision": "EXCLUDE",
+    "agreed_count": 3
+  },
+  {
+    "no": 33,
+    "paper_id": "P1273",
+    "title": "Exposing Weak Links in Multi-Agent Systems under Adversarial Prompting",
+    "year": 2025,
+    "venue": "arXiv (Cornell University)",
+    "doi": "10.48550/arxiv.2511.10949",
+    "pdf_path": "02_slr/retrieval/pdfs/P1273.pdf",
+    "abstract_short": "LLM-based agents are increasingly deployed in multi-agent systems (MAS). As these systems move toward real-world applications, their security becomes paramount. Existing research largely evaluates single-agent security, leaving a critical gap in understanding the vulnerabilities introduced by multi-agent design. However, existing systems fall short due to lack of unified frameworks and metrics focusing on unique rejection modes in MAS. We present SafeAgents, a unified and extensible framework for fine-grained security assessment of MAS. SafeAgents systematically exposes how design choices such",
+    "is_control": false,
+    "modelA": {
+      "paper_id": "P1273",
+      "decision": "EXCLUDE",
+      "ec": "EC5",
+      "evidence_section": "Section 1 (Introduction) dan Section 3.2 (Adversarial Prompting Benchmarks)",
+      "rationale": "Makalah ini berfokus pada evaluasi keamanan AI (AI safety) dan kerentanan arsitektur Multi-Agent Systems terhadap adversarial prompting serta jailbreak menggunakan benchmark keamanan umum (AgentHarm, ASB, SafeArena, RedCode), bukan untuk menyelesaikan atau mendukung tugas Software Engineering."
+    },
+    "modelB": {
+      "paper_id": "P1273",
+      "decision": "EXCLUDE",
+      "ec": "EC5",
+      "evidence_section": "Section 1 Introduction / Section 3.2 Adversarial Prompting Benchmarks",
+      "rationale": "Makalah ini berfokus pada pengujian keamanan, kerentanan, dan ketahanan arsitektur Multi-Agent LLM terhadap adversarial prompting dan prompt injection (domain AI Safety & Security), bukan untuk menyelesaikan atau mengkaji tugas-tugas rekayasa perangkat lunak (Software Engineering)."
+    },
+    "agreement": true,
+    "is_disagreement": false,
+    "modelC": {
+      "decision": "EXCLUDE",
+      "ec": "EC5",
+      "paper_id": "P1273",
+      "rationale": "Framework keamanan SafeAgents untuk kerentanan adversarial prompting pada MAS umum (web/tools/code sebagai vektor serangan), bukan metode multi-agent LLM untuk software engineering."
+    },
+    "unanimous": true,
+    "majority_decision": "EXCLUDE",
+    "agreed_count": 3
+  },
+  {
+    "no": 34,
+    "paper_id": "P1229",
+    "title": "Towards AGI A Pragmatic Approach Towards Self Evolving Agent",
+    "year": 2026,
+    "venue": "arXiv (Cornell University)",
+    "doi": "10.48550/arxiv.2601.11658",
+    "pdf_path": "02_slr/retrieval/pdfs/P1229.pdf",
+    "abstract_short": "Large Language Model (LLM) based agents are powerful yet fundamentally static after deployment, lacking the ability to autonomously expand capabilities, generate new tools, or evolve their reasoning. This work introduces a hierarchical self-evolving multi-agent framework that integrates a Base LLM, an operational SLM agent, a Code-Generation LLM, and a Teacher-LLM to enable continuous adaptation. The workflow begins with the agent attempting a task using reasoning and existing tools; if unsuccessful, it escalates to tool synthesis through the Code-Gen LLM, and when failures persist, it trigger",
+    "is_control": false,
+    "modelA": {
+      "paper_id": "P1229",
+      "decision": "EXCLUDE",
+      "ec": "EC5",
+      "evidence_section": "Section V. DATASET dan Section VII. EXPERIMENTS AND RESULTS",
+      "rationale": "Makalah ini mengkaji kerangka agen otonom self-evolving untuk tujuan umum/AGI dan dievaluasi pada dataset tugas perencanaan sintetis TaskCraft, bukan ditujukan untuk tugas rekayasa perangkat lunak (Software Engineering)."
+    },
+    "modelB": {
+      "paper_id": "P1229",
+      "decision": "EXCLUDE",
+      "ec": "EC5",
+      "evidence_section": "Section V. Dataset & Section VII. Experiments and Results",
+      "rationale": "Penelitian ini berfokus pada pengembangan agen otonom self-evolving untuk tujuan umum/menuju AGI yang dievaluasi pada dataset perencanaan sintetis (TaskCraft), bukan untuk menyelesaikan tugas-tugas rekayasa perangkat lunak (Software Engineering)."
+    },
+    "agreement": true,
+    "is_disagreement": false,
+    "modelC": {
+      "decision": "EXCLUDE",
+      "ec": "EC5",
+      "paper_id": "P1229",
+      "rationale": "Framework self-evolving multi-agent umum (CL/RL/GA di TaskCraft) untuk otonomi AGI, bukan untuk tugas software engineering."
+    },
+    "unanimous": true,
+    "majority_decision": "EXCLUDE",
+    "agreed_count": 3
+  },
+  {
+    "no": 35,
+    "paper_id": "P0541",
+    "title": "Enhancing LLM-based Quantum Code Generation with Multi-Agent Optimization and Quantum Error Correction",
+    "year": 2025,
+    "venue": "Proceedings - Design Automation Conference",
+    "doi": "10.1109/dac63849.2025.11133316",
+    "pdf_path": "02_slr/retrieval/pdfs/P0541.pdf",
+    "abstract_short": "Multi-agent frameworks with Large Language Models (LLMs) have become promising tools for generating generalpurpose programming languages using test-driven development, allowing developers to create more accurate and robust code. However, their potential has not been fully unleashed for domainspecific programming languages, where specific domain exhibits unique optimization opportunities for customized improvement. In this paper, we take the first step in exploring multi-agent code generation for quantum programs. By identifying the unique optimizations in quantum designs such as quantum error ",
+    "is_control": false,
+    "modelA": {
+      "paper_id": "P0541",
+      "decision": "INCLUDE",
+      "ec": "-",
+      "evidence_section": "Section III-A & Section V",
+      "rationale": "Makalah ini mengusulkan framework multi-agent berbasis LLM yang terdiri dari Code Generation Agent, Semantic Analysis Agent, dan QEC Agent dengan koordinasi orchestrator untuk tugas quantum code generation. Pendekatan ini dievaluasi secara kuantitatif pada Qiskit HumanEval benchmark dan test suite yang dibuat dengan metrik pass@1 dan akurasi."
+    },
+    "modelB": {
+      "paper_id": "P0541",
+      "decision": "INCLUDE",
+      "ec": "-",
+      "evidence_section": "Section III. MULTI-AGENT FRAMEWORK AND TRAINING & Section V. EXPERIMENTS",
+      "rationale": "Makalah ini mengusulkan framework multi-agent LLM yang terdiri dari Code Generation Agent, Semantic Analysis Agent, dan QEC Decoder Agent dengan mekanisme multi-pass feedback loop untuk tugas quantum code generation. Kinerjanya dievaluasi secara empiris dan kuantitatif menggunakan benchmark Qiskit HumanEval serta test suite terdedikasi."
+    },
+    "agreement": true,
+    "is_disagreement": false,
+    "modelC": {
+      "decision": "INCLUDE",
+      "ec": "-",
+      "paper_id": "P0541",
+      "rationale": "Framework multi-agent LLM untuk generasi kode kuantum dengan loop umpan-balik optimasi multi-pass/QEC dan evaluasi kuantitatif akurasi pada test suite."
+    },
+    "unanimous": true,
+    "majority_decision": "INCLUDE",
+    "agreed_count": 3
+  },
+  {
+    "no": 36,
+    "paper_id": "P1555",
+    "title": "DevFlow: An Agentic AI Architecture Planning Platform for Software Engineering Workflows",
+    "year": 2026,
+    "venue": "Iconic Research and Engineering Journals",
+    "doi": "10.64388/irev9i11-1717845",
+    "pdf_path": "02_slr/retrieval/pdfs/P1555.pdf",
+    "abstract_short": "",
+    "is_control": false,
+    "modelA": {
+      "paper_id": "P1555",
+      "decision": "EXCLUDE",
+      "ec": "EC6",
+      "evidence_section": "Halaman 1-2 (pp. 2203-2204)",
+      "rationale": "Naskah merupakan makalah pendek yang hanya memiliki panjang 2 halaman (<4 halaman) serta tidak menyajikan evaluasi empiris konkret."
+    },
+    "modelB": {
+      "paper_id": "P1555",
+      "decision": "EXCLUDE",
+      "ec": "EC6",
+      "evidence_section": "Halaman 1–2 / Volume 9 Issue 11, pp. 2203-2204",
+      "rationale": "Makalah ini merupakan makalah pendek yang hanya terdiri dari 2 halaman (< 4 halaman) dan tidak menyajikan evaluasi eksperimental empiris kuantitatif."
+    },
+    "agreement": true,
+    "is_disagreement": false,
+    "modelC": {
+      "ec": "EC6",
+      "paper_id": "P1555",
+      "rationale": "Naskah hanya 2 halaman berupa deskripsi konseptual platform DevFlow tanpa evaluasi empiris kuantitatif dan multi-agent hanya disebut sebagai future work.",
+      "decision": "EXCLUDE"
+    },
+    "unanimous": true,
+    "majority_decision": "EXCLUDE",
+    "agreed_count": 3
+  },
+  {
+    "no": 37,
+    "paper_id": "P0920",
+    "title": "How Humans, Bots, and Agents Communicate About Vulnerabilities in Pull Requests",
+    "year": 2026,
+    "venue": "arXiv (Cornell University)",
+    "doi": "10.48550/arxiv.2606.28125",
+    "pdf_path": "02_slr/retrieval/pdfs/P0920.pdf",
+    "abstract_short": "Developers may reference vulnerabilities in pull request discussions through both explicit identifiers, such as CVEs or GHSAs, and implicit security-related language (e.g., \"unauthorized access\" or \"SQL injection\"). Prior work has primarily focused on explicit identifiers, potentially overlooking vulnerability discussions that lack formal references. Bots and coding agents are becoming more common in pull requests, raising new questions about how different accounts communicate about vulnerabilities. In this registered report, we describe our planned study of vulnerability communication in pull",
+    "is_control": false,
+    "modelA": {
+      "paper_id": "P0920",
+      "decision": "EXCLUDE",
+      "ec": "EC3",
+      "evidence_section": "Section IV. DATASET",
+      "rationale": "Makalah ini berfokus menganalisis komunikasi kerentanan pada pull request yang dibuat oleh manusia, bot, dan coding agent individual (seperti OpenAI Codex, Devin, dan GitHub Copilot), sehingga tidak mengusulkan atau mengevaluasi sistem maupun arsitektur Multi-Agent LLM."
+    },
+    "modelB": {
+      "paper_id": "P0920",
+      "decision": "EXCLUDE",
+      "ec": "EC3",
+      "evidence_section": "Section I (Introduction) & Section IV (Dataset)",
+      "rationale": "Makalah ini merupakan studi empiris penambangan repositori yang menganalisis pola komunikasi kerentanan oleh manusia, bot, dan agen pengodean tunggal (seperti Devin, GitHub Copilot, Claude Code) pada pull request GitHub, tanpa mengusulkan atau mengkaji arsitektur sistem Multi-Agent LLM."
+    },
+    "agreement": true,
+    "is_disagreement": false,
+    "modelC": {
+      "ec": "EC3",
+      "paper_id": "P0920",
+      "rationale": "Registered report berupa rencana studi observasional komunikasi kerentanan oleh humans/bots/agents individual tanpa arsitektur multi-agent terkoordinasi dan tanpa hasil kuantitatif yang sudah dieksekusi.",
+      "decision": "EXCLUDE"
+    },
+    "unanimous": true,
+    "majority_decision": "EXCLUDE",
+    "agreed_count": 3
+  },
+  {
+    "no": 38,
+    "paper_id": "P2080",
+    "title": "Compile-time Security Analysis and Optimization of Sensitive String Producers",
+    "year": 2026,
+    "venue": "arXiv (Cornell University)",
+    "doi": "10.48550/arxiv.2605.16561",
+    "pdf_path": "02_slr/retrieval/pdfs/P2080.pdf",
+    "abstract_short": "Content composition vulnerabilities remain among the most prevalent and persistent classes of security weakness in deployed software. Prior mitigations, including developer training, static analysis tools, and domain-specific template languages, each face diminishing returns; AI code generation inherits these limitations and introduces new ones, reproducing insecure patterns from training data and lacking reliable context for self-correction. This paper introduces a general framework for secure content composition that extends across content languages and integrates directly into general-purpo",
+    "is_control": false,
+    "modelA": {
+      "paper_id": "P2080",
+      "decision": "EXCLUDE",
+      "ec": "EC3",
+      "evidence_section": "Abstract",
+      "rationale": "Makalah ini mengusulkan sintaks dan teknik analisis kompilator untuk komposisi string yang aman (contextual auto-escaping) pada bahasa pemrograman, bukan mengusulkan atau mengkaji arsitektur sistem Multi-Agent LLM."
+    },
+    "modelB": {
+      "paper_id": "P2080",
+      "decision": "EXCLUDE",
+      "ec": "EC3",
+      "evidence_section": "Abstract & Section 1 Background",
+      "rationale": "Makalah ini berfokus pada desain bahasa pemrograman dan teknik kompilasi (contextual auto-escaping dan analisis waktu kompilasi) untuk komposisi string yang aman, bukan mengusulkan atau meneliti sistem/arsitektur Multi-Agent LLM untuk Software Engineering."
+    },
+    "agreement": true,
+    "is_disagreement": false,
+    "modelC": {
+      "ec": "EC3",
+      "paper_id": "P2080",
+      "rationale": "Framework desain bahasa/compiler untuk secure content composition tanpa sistem multi-agent LLM; AI coding agents hanya disebut sebagai motivasi pengguna library.",
+      "decision": "EXCLUDE"
+    },
+    "unanimous": true,
+    "majority_decision": "EXCLUDE",
+    "agreed_count": 3
+  },
+  {
+    "no": 39,
+    "paper_id": "P0957",
+    "title": "More than a Judge: An Empirical Study of Agent-Human Interaction in Crowdsourced Testing Assessment",
+    "year": 2026,
+    "venue": "arXiv (Cornell University)",
+    "doi": "10.48550/arxiv.2606.06301",
+    "pdf_path": "02_slr/retrieval/pdfs/P0957.pdf",
+    "abstract_short": "Agentic AI is increasingly being integrated into software engineering workflows. In crowdsourced testing, however, the large volume and uneven quality of submitted reports still create a substantial review burden for developers. In prior work, we developed and validated a multi-agent assessment backbone based on the LLM-as-a-Judge paradigm. That backbone assesses reports along three dimensions--textuality, adequacy, and competitiveness--and was shown to align well with human consensus while substantially reducing assessment effort. Yet reliable automated judging does not by itself show whether",
+    "is_control": false,
+    "modelA": {
+      "paper_id": "P0957",
+      "decision": "INCLUDE",
+      "ec": "-",
+      "evidence_section": "Section 1 (p. 2), Section 3 (p. 6-8), and Section 5 (p. 14-20)",
+      "rationale": "Makalah ini mengkaji penerapan kerangka kerja Multi-Agent LLM (agen terspesialisasi Textuality, Adequacy, dan Competitiveness dengan mekanisme resolusi dual-LLM) dalam alur kerja crowdsourced testing melalui assess-and-revise feedback loop. Penelitian ini menyajikan evaluasi empiris kuantitatif empat tahap melibatkan 20 tester pada tiga aplikasi nyata dengan metrik kualitas konkret (TC, DE, TXT, dan ADQ)."
+    },
+    "modelB": {
+      "paper_id": "P0957",
+      "decision": "INCLUDE",
+      "ec": "-",
+      "evidence_section": "Section 3 (The Multi-dimensional Assessment Agents in a Feedback-Oriented Workflow) & Section 5 (Results)",
+      "rationale": "Makalah ini mengkaji integrasi sistem multi-agent LLM (Textuality, Adequacy, dan Competitiveness assessment agents dengan mekanisme dual LLM disagreement resolution) ke dalam feedback loop pengujian perangkat lunak (crowdsourced testing) serta menyajikan evaluasi empiris kuantitatif melalui eksperimen empat tahap dengan metrik terukur."
+    },
+    "agreement": true,
+    "is_disagreement": false,
+    "modelC": {
+      "ec": "-",
+      "paper_id": "P0957",
+      "rationale": "Studi primer multi-agent LLM-as-a-Judge untuk crowdsourced testing (tugas SE) dengan feedback loop agent-human dan evaluasi empiris kuantitatif studi subjek terkontrol 20 tester pada 3 aplikasi.",
+      "decision": "INCLUDE"
+    },
+    "unanimous": true,
+    "majority_decision": "INCLUDE",
+    "agreed_count": 3
+  },
+  {
+    "no": 40,
+    "paper_id": "P1171",
+    "title": "Managing Uncertainty in LLM-based Multi-Agent System Operation",
+    "year": 2026,
+    "venue": "arXiv (Cornell University)",
+    "doi": "10.48550/arxiv.2602.23005",
+    "pdf_path": "02_slr/retrieval/pdfs/P1171.pdf",
+    "abstract_short": "Applying LLM-based multi-agent software systems in safety-critical domains such as lifespan echocardiography introduces system-level risks that cannot be addressed by improving model accuracy alone. During system operation, beyond individual LLM behavior, uncertainty propagates through agent coordination, data pipelines, human-in-the-loop interaction, and runtime control logic. Yet existing work largely treats uncertainty at the model level rather than as a first-class software engineering concern. This paper approaches uncertainty from both system-level and runtime perspectives. We first diff",
+    "is_control": false,
+    "modelA": {
+      "paper_id": "P1171",
+      "decision": "EXCLUDE",
+      "ec": "EC2",
+      "evidence_section": "Section 1 (Introduction, Page 2) & Section 4 (Conclusion and Future Work, Page 11)",
+      "rationale": "Makalah ini merupakan position/vision paper konseptual tanpa evaluasi empiris atau eksperimen kuantitatif (implementasi dan evaluasi baru direncanakan pada future work). Selain itu, sistem multi-agen yang dibahas ditujukan untuk diagnosis ekokardiografi klinis dan bukan untuk tugas software engineering (melanggar pula IC1/EC5)."
+    },
+    "modelB": {
+      "paper_id": "P1171",
+      "decision": "EXCLUDE",
+      "ec": "EC2",
+      "evidence_section": "Section 1 (Introduction) & Section 4 (Conclusion and Future Work)",
+      "rationale": "Makalah ini merupakan vision/position paper yang mengusulkan kerangka konseptual manajemen ketidakpastian untuk sistem multi-agen LLM tanpa menyajikan evaluasi eksperimental empiris kuantitatif konkret."
+    },
+    "agreement": true,
+    "is_disagreement": false,
+    "modelC": {
+      "ec": "EC5",
+      "paper_id": "P1171",
+      "rationale": "Sistem multi-agent LLM untuk diagnosis ekokardiografi klinis (domain kedokteran) bukan tugas rekayasa perangkat lunak, walau memiliki framework ketidakpastian dan HITL.",
+      "decision": "EXCLUDE"
+    },
+    "unanimous": true,
+    "majority_decision": "EXCLUDE",
+    "agreed_count": 3
+  },
+  {
+    "no": 41,
+    "paper_id": "P1200",
+    "title": "Geo-Code: A Code Framework for Reverse Code Generation from Geometric Images Based on Two-Stage Multi-Agent Evolution",
+    "year": 2026,
+    "venue": "arXiv (Cornell University)",
+    "doi": "10.48550/arxiv.2602.07749",
+    "pdf_path": "02_slr/retrieval/pdfs/P1200.pdf",
+    "abstract_short": "Program code serves as a bridge linking vision and logic, providing a feasible supervisory approach for enhancing the multimodal reasoning capability of large models through geometric operations such as auxiliary line construction and perspective transformation. Nevertheless, current inverse graphics methods face tremendous challenges in accurately reconstructing complex geometric details, which often results in the loss of key geometric constraints or structural distortion. To address this bottleneck, we propose Geo-coder -- the first inverse programming framework for geometric images based o",
+    "is_control": false,
+    "modelA": {
+      "paper_id": "P1200",
+      "decision": "EXCLUDE",
+      "ec": "EC5",
+      "evidence_section": "Section 1 (Abstract) & Section 6.2 (Downstream Multimodal Reasoning Evaluation)",
+      "rationale": "Makalah ini berfokus pada bidang inverse graphics dan rekonstruksi gambar geometri untuk mendukung tugas penalaran matematika multimodal pada model MLLM (dievaluasi pada benchmark GeoQA, MathVerse, dsb.), bukan untuk tugas rekayasa perangkat lunak (SE). Oleh karena itu, penelitian ini berada di luar domain software engineering."
+    },
+    "modelB": {
+      "paper_id": "P1200",
+      "decision": "INCLUDE",
+      "ec": "-",
+      "evidence_section": "Section 4.2 Methodology Framework & Section 6 Experiment",
+      "rationale": "Paper ini mengusulkan arsitektur multi-agent berbasis LLM yang terdiri dari enam agen dengan closed-loop feedback untuk tugas program synthesis dan code refinement, serta menyajikan evaluasi empiris kuantitatif yang komprehensif pada empat dataset benchmark."
+    },
+    "agreement": false,
+    "is_disagreement": true,
+    "modelC": {
+      "decision": "INCLUDE",
+      "ec": "-",
+      "paper_id": "P1200",
+      "rationale": "Sistem multi-agen (extraction, verification, generation, execution, inspection, correction) dengan closed-loop VEP untuk генерасі kode geometri dan evaluasi kuantitatif di 4 benchmark (MathVerse, GeoQA, GeoSketch, AuxSolidMath) memakai metrik SC/PP/SSIM/HD/CD."
+    },
+    "unanimous": false,
+    "majority_decision": "INCLUDE",
+    "agreed_count": 2
+  },
+  {
+    "no": 42,
+    "paper_id": "P0898",
+    "title": "Detecting Vulnerability-Inducing Commits via Multi-Stage Reasoning with LLM-Based Agents",
+    "year": 2026,
+    "venue": "",
+    "doi": "",
+    "pdf_path": "02_slr/retrieval/pdfs/P0898.pdf",
+    "abstract_short": "Detecting vulnerability-inducing commits (VICs) at submission time is critical for improving the security and reliability of software systems. However, this task is highly challenging because it requires reasoning about the semantic impact of code changes from heterogeneous information sources, including code diffs, commit messages, and the surrounding contextual code. Existing approaches often struggle to fully capture these complex interactions, resulting in limited detection performance. In this paper, we propose VIC-RAGENT, an LLM-based multi-agent framework for effective and explainable v",
+    "is_control": false,
+    "modelA": {
+      "paper_id": "P0898",
+      "decision": "INCLUDE",
+      "ec": "-",
+      "evidence_section": "Section 2 Multi-Agent Analysis Framework & Section 5 Experimental Results",
+      "rationale": "Makalah ini mengusulkan VIC-RAGENT, sistem multi-agent berbasis LLM dengan peran terspesialisasi (Code Analyst, Target Analyst, Vulnerability Inspector, Document Specialist, Audit Supervisor) untuk deteksi vulnerability-inducing commits dalam rekayasa perangkat lunak. Kinerjanya dievaluasi secara kuantitatif pada dataset nyata V-SZZ dan CVE menggunakan metrik Precision, Recall, dan F1-score."
+    },
+    "modelB": {
+      "paper_id": "P0898",
+      "decision": "INCLUDE",
+      "ec": "-",
+      "evidence_section": "Section 1, Section 2 (Multi-Agent Analysis Framework), Table 1, and Section 5 (Experimental Results)",
+      "rationale": "Makalah ini mengusulkan VIC-RAGENT, sebuah arsitektur multi-agent LLM (terdiri dari Code Analyst, Target Analyst, Vulnerability Inspector, Document Specialist, dan Audit Supervisor) untuk just-in-time vulnerability detection dalam rekayasa perangkat lunak. Studi ini mencakup koordinasi multi-tahap antar-agen dan dievaluasi secara empiris menggunakan metrik kuantitatif (Precision, Recall, F1-score) pada dataset V-SZZ."
+    },
+    "agreement": true,
+    "is_disagreement": false,
+    "modelC": {
+      "decision": "INCLUDE",
+      "ec": "-",
+      "paper_id": "P0898",
+      "rationale": "Framework multi-agen (Code Analyst, Target Analyst, Vulnerability Inspector, Document Specialist) dengan penalaran multi-stage untuk deteksi VIC yang merupakan tugas SE dan evaluasi kuantitatif di dataset V-SZZ lintas multi-LLM dengan F1 1,2-1,7x."
+    },
+    "unanimous": true,
+    "majority_decision": "INCLUDE",
+    "agreed_count": 3
+  },
+  {
+    "no": 43,
+    "paper_id": "P4517",
+    "title": "Formally-based Model-Driven Development of Collaborative Robotic Applications",
+    "year": 2021,
+    "venue": "Journal of Intelligent & Robotic Systems",
+    "doi": "10.1007/s10846-021-01386-2",
+    "pdf_path": "02_slr/retrieval/pdfs/P4517.pdf",
+    "abstract_short": "",
+    "is_control": false,
+    "modelA": {
+      "paper_id": "P4517",
+      "decision": "EXCLUDE",
+      "ec": "EC5",
+      "evidence_section": "Abstract",
+      "rationale": "Makalah ini berfokus pada pengembangan dan verifikasi formal aplikasi robotika kolaboratif (Human-Robot Collaboration) untuk manufaktur industri, dan sama sekali tidak melibatkan atau mengkaji sistem Multi-Agent LLM untuk tugas Software Engineering."
+    },
+    "modelB": {
+      "paper_id": "P4517",
+      "decision": "EXCLUDE",
+      "ec": "EC5",
+      "evidence_section": "Abstract & Section 1 Introduction",
+      "rationale": "Makalah ini berfokus pada model-driven development dan verifikasi formal berbasis temporal logic untuk aplikasi keselamatan robotika kolaboratif industri (Human-Robot Collaboration), tanpa mengusulkan atau mengkaji arsitektur Multi-Agent berbasis Large Language Model (LLM)."
+    },
+    "agreement": true,
+    "is_disagreement": false,
+    "modelC": {
+      "decision": "EXCLUDE",
+      "ec": "EC5",
+      "paper_id": "P4517",
+      "rationale": "Toolchain model-driven berbasis UML dan verifikasi formal untuk aplikasi robot kolaboratif fisik, bukan multi-agent LLM untuk software engineering."
+    },
+    "unanimous": true,
+    "majority_decision": "EXCLUDE",
+    "agreed_count": 3
+  },
+  {
+    "no": 44,
+    "paper_id": "P0397",
+    "title": "AgentClick: A Skill-Based Human-in-the-Loop Review Layer for Terminal AI Agents",
+    "year": 2026,
+    "venue": "Proceedings of the ACM Conference on AI and Agentic Systems, CAIS 2026",
+    "doi": "10.1145/3786335.3813232",
+    "pdf_path": "02_slr/retrieval/pdfs/P0397.pdf",
+    "abstract_short": "Recent autonomous AI agents such as Codex, and Claude Code have made it increasingly practical for users to delegate complex tasks, including writing emails, executing code, issuing shell commands, and carrying out multi-step plans. However, despite these capabilities, human-agent interaction still largely happens through terminal interfaces or remote text-based channels such as Discord. These interaction modes are often inefficient and unfriendly: long text outputs are difficult to read and review, proposed actions lack clear structure and visual context, and users must express feedback by ty",
+    "is_control": false,
+    "modelA": {
+      "paper_id": "P0397",
+      "decision": "EXCLUDE",
+      "ec": "EC3",
+      "evidence_section": "Section 2.1 Human–Browser–Backend–Agent Architecture & Section 3 Evaluation",
+      "rationale": "AgentClick dirancang sebagai antarmuka review human-in-the-loop untuk mengawasi satu agen terminal AI otonom (seperti Claude Code atau OpenClaw), bukan sistem kolaboratif multi-agent LLM. Selain itu, makalah ini merupakan demo paper yang hanya menyajikan capability walkthrough tanpa evaluasi empiris kuantitatif konkret."
+    },
+    "modelB": {
+      "paper_id": "P0397",
+      "decision": "EXCLUDE",
+      "ec": "EC3",
+      "evidence_section": "Section 2.1 Human–Browser–Backend–Agent Architecture: 'AgentClick is built around four components: human, browser, backend, and agent. The agent executes tasks autonomously—drafting emails, proposing plans, running code, and calling tools—but rather than acting immediately, it submits proposals to the backend and waits for a review outcome.'",
+      "rationale": "Makalah ini mengusulkan lapisan review interaktif human-in-the-loop untuk agen AI terminal tunggal (seperti Claude Code atau OpenClaw) dan tidak mengusulkan maupun mengkaji arsitektur kolaborasi multi-agent LLM."
+    },
+    "agreement": true,
+    "is_disagreement": false,
+    "modelC": {
+      "decision": "EXCLUDE",
+      "ec": "EC3",
+      "paper_id": "P0397",
+      "rationale": "Lapisan review HITL untuk agen terminal tunggal (skill Markdown bukan agen kolaboratif) berupa demo walkthrough tanpa evaluasi empiris kuantitatif."
+    },
+    "unanimous": true,
+    "majority_decision": "EXCLUDE",
+    "agreed_count": 3
+  },
+  {
+    "no": 45,
+    "paper_id": "P1814",
+    "title": "What Does Multi-Harness RL Learn? Credit Assignment and Portability in Coding Agents",
+    "year": 2026,
+    "venue": "arXiv (Cornell University)",
+    "doi": "10.48550/arxiv.2609.04518",
+    "pdf_path": "02_slr/retrieval/pdfs/P1814.pdf",
+    "abstract_short": "Agent reinforcement learning (RL) increasingly runs through full execution harnesses, and a multi-harness recipe mixes two choices: exposing the policy to several harnesses, and comparing their rewards inside one relative-advantage group. We isolate the second choice in repository-level coding. From one Qwen3-8B supervised warm start we replay the same frozen task-harness records from Aider, OpenHands, Qwen Code, and SWE-agent, with the same number of updates, under two rules for group-relative policy optimization (GRPO), Within (one group per task-harness pair) and Cross (harnesses pooled wit",
+    "is_control": false,
+    "modelA": {
+      "paper_id": "P1814",
+      "decision": "EXCLUDE",
+      "ec": "EC3",
+      "evidence_section": "Section 1 (Introduction) & Section 3 (Separating exposure from credit assignment)",
+      "rationale": "Makalah ini mengkaji pelatihan reinforcement learning (GRPO) dan credit assignment untuk satu kebijakan model LLM tunggal (Qwen3-8B) di berbagai harness/scaffold eksekusi coding, bukan mengusulkan atau mengevaluasi sistem multi-agent LLM."
+    },
+    "modelB": {
+      "paper_id": "P1814",
+      "decision": "EXCLUDE",
+      "ec": "EC3",
+      "evidence_section": "Abstract & Section 1 (Introduction)",
+      "rationale": "Makalah ini meneliti metode reinforcement learning (GRPO) dan penugasan kredit lintas environment/harness (multi-harness RL) pada model agen tunggal (Qwen3-8B), bukan mengusulkan atau mengkaji sistem kolaborasi multi-agent."
+    },
+    "agreement": true,
+    "is_disagreement": false,
+    "modelC": {
+      "decision": "EXCLUDE",
+      "ec": "EC3",
+      "paper_id": "P1814",
+      "rationale": "Studi isolasi batas grup GRPO Within vs Cross untuk single-policy RL lintas harness coding, bukan sistem multi-agen dengan koordinasi peran atau gate."
+    },
+    "unanimous": true,
+    "majority_decision": "EXCLUDE",
+    "agreed_count": 3
+  },
+  {
+    "no": 46,
+    "paper_id": "P3531",
+    "title": "Developer Operations and Engineering Multi-agent Systems",
+    "year": 2022,
+    "venue": "Engineering Multi-Agent Systems",
+    "doi": "10.1007/978-3-030-97457-2_10",
+    "pdf_path": "02_slr/retrieval/pdfs/P3531.pdf",
+    "abstract_short": "",
+    "is_control": false,
+    "modelA": {
+      "paper_id": "P3531",
+      "decision": "EXCLUDE",
+      "ec": "EC2",
+      "evidence_section": "Section 1 (Introduction) and Section 6 (Conclusion)",
+      "rationale": "Makalah ini merupakan position/vision paper murni yang mengusulkan integrasi konseptual antara Engineering Multi-Agent Systems (EMAS) dan DevOps tanpa melibatkan sistem berbasis LLM maupun evaluasi eksperimental primer secara kuantitatif."
+    },
+    "modelB": {
+      "paper_id": "P3531",
+      "decision": "EXCLUDE",
+      "ec": "EC2",
+      "evidence_section": "Abstract & Section 6 Conclusion",
+      "rationale": "Makalah ini merupakan position paper konseptual yang mendiskusikan integrasi Engineering Multi-Agent Systems (EMAS tradisional berbasis BDI/AOP) dengan praktik DevOps tanpa menyajikan evaluasi eksperimental empiris primer ataupun sistem multi-agent berbasis LLM."
+    },
+    "agreement": true,
+    "is_disagreement": false,
+    "modelC": {
+      "decision": "EXCLUDE",
+      "ec": "EC2",
+      "paper_id": "P3531",
+      "rationale": "Position paper konseptual DevOps+EMAS klasik tanpa LLM dan tanpa evaluasi empiris kuantitatif."
+    },
+    "unanimous": true,
+    "majority_decision": "EXCLUDE",
+    "agreed_count": 3
+  },
+  {
+    "no": 47,
+    "paper_id": "P2196",
+    "title": "Multi-Agent LLM-Based Metamorphic Testing for REST APIs",
+    "year": 2026,
+    "venue": "2026 IEEE 50th Annual Computers, Software, and Applications Conference (COMPSAC)",
+    "doi": "10.1109/compsac69091.2026.00043",
+    "pdf_path": "02_slr/retrieval/pdfs/P2196.pdf",
+    "abstract_short": "",
+    "is_control": false,
+    "modelA": {
+      "paper_id": "P2196",
+      "decision": "INCLUDE",
+      "ec": "-",
+      "evidence_section": "Section III-B Multi-agent workflow, Section IV Evaluation, Tables I-III",
+      "rationale": "Makalah ini mengusulkan ARMeta, yaitu arsitektur multi-agent berbasis LLM untuk metamorphic testing pada REST API yang melibatkan koordinasi beberapa agen terspesialisasi (MR Generator, MR Refiner, Test Generator, Code Refiner) dengan loop perbaikan berbasis AST. Pendekatan ini dievaluasi secara empiris dan kuantitatif pada dua benchmark API nyata (PetStore dan UserManagement) terhadap metrik cakupan operasional dan fault detection."
+    },
+    "modelB": {
+      "paper_id": "P2196",
+      "decision": "INCLUDE",
+      "ec": "-",
+      "evidence_section": "Section III-B Multi-agent workflow, Section IV Evaluation",
+      "rationale": "Makalah ini mengusulkan ARMeta, sebuah kerangka kerja multi-agent LLM (melibatkan MR Generator, MR Refiner, Test Generator, dan Code Refiner Agent) untuk metamorphic testing pada REST API, lengkap dengan evaluasi empiris kuantitatif pada dua benchmark REST API."
+    },
+    "agreement": true,
+    "is_disagreement": false,
+    "modelC": {
+      "decision": "INCLUDE",
+      "ec": "-",
+      "paper_id": "P2196",
+      "rationale": "Workflow multi-agen LLM (ARMeta) untuk pengujian REST API dengan evaluasi kuantitatif pada dua SUT nyata."
+    },
+    "unanimous": true,
+    "majority_decision": "INCLUDE",
+    "agreed_count": 3
+  },
+  {
+    "no": 48,
+    "paper_id": "P0864",
+    "title": "Enhancing SLMs for Sustainable Code Optimization in Radio-Astronomy",
+    "year": 2026,
+    "venue": "arXiv (Cornell University)",
+    "doi": "10.48550/arxiv.2607.21677",
+    "pdf_path": "02_slr/retrieval/pdfs/P0864.pdf",
+    "abstract_short": "Recent Large Language Models (LLMs) can produce and optimize complex code. We investigate the use of LLMs to generate and optimize code for large-scale sciences, focusing on radio astronomy and sustainability. The LOFAR telescope is currently being upgraded, significantly increasing the sky area observed, while simultaneously processing more data faster. However, this is expected to increase the computational requirements 40-fold. This upgrade thus critically depends on rigorous performance optimization of existing software and widespread adoption of accelerators. The code base is very large, ",
+    "is_control": false,
+    "modelA": {
+      "paper_id": "P0864",
+      "decision": "EXCLUDE",
+      "ec": "EC3",
+      "evidence_section": "Section IV-B (Page 5) and Section I (Page 2)",
+      "rationale": "Penelitian ini berfokus pada alur kerja agen tunggal (single-agent) dengan loop umpan balik kompilator (compiler feedback loop) serta perbandingan multi-sampling SLM versus LLM tunggal, bukan sistem atau arsitektur Multi-Agent LLM dengan interaksi atau koordinasi antar-agen."
+    },
+    "modelB": {
+      "paper_id": "P0864",
+      "decision": "INCLUDE",
+      "ec": "-",
+      "evidence_section": "Section IV-B (Agentic AI method: Using compiler errors as feedback) and Section IV-C (Adaptations for benchmarking)",
+      "rationale": "Makalah ini mengkaji arsitektur multi-agent/role-based (coder assistant dan debugger assistant) yang berinteraksi melalui feedback loop hasil kompilasi untuk perbaikan kode secara iteratif. Sistem dievaluasi secara kuantitatif pada benchmark HumanEval dan CrossCodeEval untuk tugas rekayasa perangkat lunak."
+    },
+    "agreement": false,
+    "is_disagreement": true,
+    "modelC": {
+      "decision": "INCLUDE",
+      "ec": "-",
+      "paper_id": "P0864",
+      "rationale": "Agen coder-debugger SLM dengan loop umpan-balik kompiler untuk optimasi kode, dievaluasi kuantitatif di CrossCodeEval dan HumanEval."
+    },
+    "unanimous": false,
+    "majority_decision": "INCLUDE",
+    "agreed_count": 2
+  },
+  {
+    "no": 49,
+    "paper_id": "P1992",
+    "title": "A Two-Stage GPU Kernel Tuner Combining Semantic Refactoring and Search-Based Optimization",
+    "year": 2026,
+    "venue": "arXiv (Cornell University)",
+    "doi": "10.48550/arxiv.2601.12698",
+    "pdf_path": "02_slr/retrieval/pdfs/P1992.pdf",
+    "abstract_short": "GPU code optimization is a key performance bottleneck for HPC workloads as well as large-model training and inference. Although compiler optimizations and hand-written kernels can partially alleviate this issue, achieving near-hardware-limit performance still relies heavily on manual code refactoring and parameter tuning. Recent progress in LLM-agent-based kernel generation and optimization has been reported, yet many approaches primarily focus on direct code rewriting, where parameter choices are often implicit and hard to control, or require human intervention, leading to unstable performanc",
+    "is_control": false,
+    "modelA": {
+      "paper_id": "P1992",
+      "decision": "INCLUDE",
+      "ec": "-",
+      "evidence_section": "Section 3.2 Multi-agent System, Section 4 Experimental Setup",
+      "rationale": "Makalah ini mengusulkan arsitektur multi-agent LLM kolaboratif (terdiri dari Planning, Generation, Tuning, dan Testing Agent) untuk refactoring semantik dan optimasi performa kode kernel GPU. Evaluasi empiris kuantitatif dilakukan secara konkret pada kernel CUDA dari repositori SGLang menggunakan metrik speedup dan validasi kebenaran kode."
+    },
+    "modelB": {
+      "paper_id": "P1992",
+      "decision": "INCLUDE",
+      "ec": "-",
+      "evidence_section": "Section 3.2 Multi-agent System, Section 4 Experimental Setup, and Section 5 Results and Analysis",
+      "rationale": "Makalah ini mengusulkan arsitektur multi-agent berbasis LLM (melibatkan Planning Agent, Generation Agent, Tuning Agent, dan Testing Agent) dengan feedback loop tertutup untuk refactoring dan optimasi kode GPU kernel, serta menyertakan evaluasi empiris kuantitatif konkret menggunakan kernel dari pustaka SGLang."
+    },
+    "agreement": true,
+    "is_disagreement": false,
+    "modelC": {
+      "decision": "INCLUDE",
+      "ec": "-",
+      "paper_id": "P1992",
+      "rationale": "Empat agen kolaboratif untuk tuning kernel GPU dengan gate kebenaran dan evaluasi speedup kuantitatif pada kernel SGLang nyata."
+    },
+    "unanimous": true,
+    "majority_decision": "INCLUDE",
+    "agreed_count": 3
+  },
+  {
+    "no": 50,
+    "paper_id": "P1556",
+    "title": "Analyzing Information Sharing and Coordination in Multi-Agent Planning",
+    "year": 2025,
+    "venue": "arXiv (Cornell University)",
+    "doi": "10.48550/arxiv.2508.12981",
+    "pdf_path": "02_slr/retrieval/pdfs/P1556.pdf",
+    "abstract_short": "Multi-agent systems (MASs) have pushed the boundaries of large language model (LLM) agents in domains such as web research and software engineering. However, long-horizon, multi-constraint planning tasks involve conditioning on detailed information and satisfying complex interdependent constraints, which can pose a challenge for these systems. In this study, we construct an LLM-based MAS for a travel planning task which is representative of these challenges. We evaluate the impact of a notebook to facilitate information sharing, and evaluate an orchestrator agent to improve coordination in fre",
+    "is_control": false,
+    "modelA": {
+      "paper_id": "P1556",
+      "decision": "EXCLUDE",
+      "ec": "EC5",
+      "evidence_section": "Abstract & Section 3 TravelPlanner",
+      "rationale": "Makalah ini mengkaji koordinasi sistem multi-agent untuk tugas perencanaan perjalanan (travel planning) yang dievaluasi pada TravelPlanner benchmark, sehingga berada di luar domain software engineering."
+    },
+    "modelB": {
+      "paper_id": "P1556",
+      "decision": "EXCLUDE",
+      "ec": "EC5",
+      "evidence_section": "Section 1 (Introduction) & Section 3 (TravelPlanner)",
+      "rationale": "Makalah ini berfokus pada perancangan dan evaluasi sistem multi-agen LLM untuk domain perencanaan perjalanan (TravelPlanner benchmark), bukan untuk tugas-tugas Software Engineering."
+    },
+    "agreement": true,
+    "is_disagreement": false,
+    "modelC": {
+      "decision": "EXCLUDE",
+      "ec": "EC5",
+      "paper_id": "P1556",
+      "rationale": "MAS LLM dengan notebook dan orkestrator tetapi domain travel planning, bukan software engineering."
+    },
+    "unanimous": true,
+    "majority_decision": "EXCLUDE",
+    "agreed_count": 3
+  }
+]

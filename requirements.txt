@@ -1,0 +1,4 @@
+mkdocs-material==9.7.7
+mkdocs-bibtex==4.4.0
+mkdocs-roamlinks-plugin
+pymdown-extensions==11.0.2

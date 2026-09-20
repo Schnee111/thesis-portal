@@ -1,0 +1,78 @@
+site_name: thesis-review
+
+theme:
+  name: material
+  language: id
+  palette:
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.instant
+    - search.suggest
+
+plugins:
+  - search
+  - roamlinks
+  - bibtex:
+      bib_file: docs/references.bib
+
+markdown_extensions:
+  - admonition
+  - footnotes
+  - attr_list
+  - md_in_html
+  - tables
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3.2.2/es5/tex-mml-chtml.js
+  - https://unpkg.com/mermaid@11.17.2/dist/mermaid.min.js
+  - javascripts/mermaid-init.js
+
+nav:
+  - Home: index.md
+  - Protokol: perencanaan.md
+  - Progres: progres.md
+  - Matriks:
+    - Ikhtisar: matrix/index.md
+    - ChatDev (GS02): matrix/papers/qian2024chatdev.md
+    - MAGIS (GS05): matrix/papers/tao2024magis.md
+    - SGAgent (GS06): matrix/papers/zhang2026sgagent.md
+    - MapCoder (GS07): matrix/papers/islam2024mapcoder.md
+    - UniDebugger (GS10): matrix/papers/lee2025unidebugger.md
+    - Kumar 2026 (GS11): matrix/papers/kumar2026balancing.md
+    - CAMEL (GS01): matrix/papers/li2023camel.md
+    - SWE-agent (GS03): matrix/papers/yang2024sweagent.md
+    - AutoCodeRover (GS04): matrix/papers/zhang2024autocoderover.md
+    - Reflexion (GS08): matrix/papers/shinn2023reflexion.md
+    - TiCoder (GS09): matrix/papers/fakhoury2024ticoder.md
+  - Eksklusi: excluded.md
+  - Audit:
+    - Jejak Audit: audit.md
+    - Verifikasi Gate: VERIFICATION.md
+  - Gap: gap.md
+  - Kalibrasi L2 dan Adjudikasi: pilot.md
+  - Referensi: referensi.md

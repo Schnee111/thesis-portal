@@ -1,0 +1,22 @@
+# Build output
+site/
+dist/
+
+# Python virtual environment & cache
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+.cache/
+
+# Node / Cloudflare
+node_modules/
+.wrangler/
+
+# OS / Editor artifacts
+.DS_Store
+*.swp
+.idea/
+.vscode/

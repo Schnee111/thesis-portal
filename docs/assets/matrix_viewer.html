@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matriks Literatur SLR (QGS-6 + Pembanding-C)</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --bg-surface: #1e293b;
+      --bg-surface-hover: #334155;
+      --border: #334155;
+      --border-subtle: #1e293b;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #6366f1;
+      --primary-hover: #4f46e5;
+      --badge-bg: #334155;
+      --badge-text: #e2e8f0;
+      --accent-qa: #10b981;
+    }
+    html.light {
+      --bg: #f8fafc;
+      --bg-surface: #ffffff;
+      --bg-surface-hover: #f1f5f9;
+      --border: #e2e8f0;
+      --border-subtle: #f1f5f9;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --primary: #4f46e5;
+      --primary-hover: #4338ca;
+      --badge-bg: #f1f5f9;
+      --badge-text: #334155;
+      --accent-qa: #059669;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      font-size: 13px;
+      padding: 16px;
+    }
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+    }
+    .search-box {
+      flex: 1;
+      min-width: 240px;
+      max-width: 400px;
+      position: relative;
+    }
+    .search-input {
+      width: 100%;
+      padding: 7px 12px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      color: var(--text);
+      font-size: 13px;
+      outline: none;
+    }
+    .search-input:focus {
+      border-color: var(--primary);
+    }
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .btn-filter {
+      padding: 5px 12px;
+      border-radius: 6px;
+      font-size: 12px;
+      cursor: pointer;
+      border: 1px solid var(--border);
+      background: var(--bg-surface);
+      color: var(--text-muted);
+      transition: all 0.15s;
+    }
+    .btn-filter:hover {
+      background: var(--bg-surface-hover);
+      color: var(--text);
+    }
+    .btn-filter.active {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #ffffff;
+      font-weight: 600;
+    }
+    .btn-action {
+      padding: 5px 10px;
+      border-radius: 6px;
+      font-size: 12px;
+      cursor: pointer;
+      border: 1px solid var(--border);
+      background: var(--bg-surface);
+      color: var(--text);
+    }
+    .btn-action:hover {
+      background: var(--bg-surface-hover);
+    }
+    .table-container {
+      overflow-x: auto;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      background: var(--bg-surface);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+    th, td {
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    th {
+      background: var(--bg-surface-hover);
+      color: var(--text-muted);
+      font-weight: 600;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    tr:hover {
+      background: var(--bg-surface-hover);
+      cursor: pointer;
+    }
+    .badge {
+      display: inline-block;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 600;
+      background: var(--badge-bg);
+      color: var(--badge-text);
+      white-space: nowrap;
+    }
+    .badge-qa {
+      color: var(--accent-qa);
+      font-family: monospace;
+    }
+    .badge-primary {
+      color: var(--primary);
+      border: 1px solid var(--primary);
+      background: transparent;
+    }
+    .line-clamp-2 {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .line-clamp-1 {
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    /* Modal / Drawer */
+    .drawer-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+      z-index: 90;
+      display: none;
+    }
+    .drawer {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      max-width: 600px;
+      background: var(--bg-surface);
+      border-left: 1px solid var(--border);
+      z-index: 100;
+      display: none;
+      flex-direction: column;
+      box-shadow: -4px 0 20px rgba(0,0,0,0.3);
+    }
+    .drawer-header {
+      padding: 16px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .drawer-body {
+      flex: 1;
+      overflow-y: auto;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .detail-item label {
+      display: block;
+      font-size: 11px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+      font-weight: 600;
+    }
+    .detail-item div {
+      font-size: 13px;
+      line-height: 1.5;
+    }
+    .link-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 12px;
+      background: var(--primary);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 500;
+    }
+    .link-button:hover {
+      background: var(--primary-hover);
+    }
+    .close-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      font-size: 20px;
+      cursor: pointer;
+      padding: 2px 8px;
+    }
+    .close-btn:hover {
+      color: var(--text);
+    }
+    .count-indicator {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="toolbar">
+    <div style="display: flex; gap: 8px; align-items: center;">
+      <div class="search-box">
+        <input type="text" id="searchInput" class="search-input" placeholder="Cari judul, penulis, arsitektur, metrik...">
+      </div>
+      <span id="resultCount" class="count-indicator">11 studi</span>
+    </div>
+
+    <div class="filters">
+      <button class="btn-filter active" onclick="setFilter('all', this)">Semua (11)</button>
+      <button class="btn-filter" onclick="setFilter('qgs', this)">QGS (6)</button>
+      <button class="btn-filter" onclick="setFilter('compc', this)">Pembanding-C (5)</button>
+      <button class="btn-filter" onclick="setFilter('gate', this)">Selective-gate (2)</button>
+      <button class="btn-filter" onclick="setFilter('peer', this)">Peer-reviewed (11)</button>
+    </div>
+
+    <div style="display: flex; gap: 6px;">
+      <button class="btn-action" onclick="exportCSV()">CSV</button>
+      <button class="btn-action" onclick="exportJSON()">JSON</button>
+    </div>
+  </div>
+
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 50px; text-align: center;">SID</th>
+          <th style="width: 70px;">BID</th>
+          <th style="min-width: 250px;">Judul & Penulis</th>
+          <th style="width: 140px;">Arsitektur</th>
+          <th style="width: 60px; text-align: center;">QA</th>
+          <th style="width: 90px;">Peran</th>
+          <th style="min-width: 200px;">Metrik Utama</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+        <tr>
+          <td colspan="7" style="text-align: center; padding: 24px; color: var(--text-muted);">
+            Memuat data...
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div id="drawerOverlay" class="drawer-overlay" onclick="closeDrawer()"></div>
+  <div id="drawer" class="drawer">
+    <div class="drawer-header">
+      <div>
+        <div style="display: flex; gap: 6px; align-items: center; margin-bottom: 6px;">
+          <span id="dSid" class="badge"></span>
+          <span id="dBid" class="badge" style="font-family: monospace;"></span>
+          <span id="dQa" class="badge badge-qa"></span>
+          <span id="dRole" class="badge badge-primary"></span>
+        </div>
+        <h3 id="dTitle" style="font-size: 15px; font-weight: 600; line-height: 1.4;"></h3>
+        <p id="dAuthors" style="font-size: 12px; color: var(--text-muted); margin-top: 2px;"></p>
+      </div>
+      <button class="close-btn" onclick="closeDrawer()">&times;</button>
+    </div>
+    <div class="drawer-body">
+      <div class="detail-item">
+        <label>Metrik Utama (Exact)</label>
+        <div id="dPrimary" style="font-weight: 500;"></div>
+      </div>
+      <div class="detail-item">
+        <label>Metrik Sekunder / Benchmark</label>
+        <div id="dSecondary"></div>
+      </div>
+      <div class="detail-item">
+        <label>Arsitektur & Koordinasi</label>
+        <div id="dArch"></div>
+      </div>
+      <div class="detail-item">
+        <label>Masalah Inti</label>
+        <div id="dCore"></div>
+      </div>
+      <div class="detail-item">
+        <label>Penjangkar Bukti (Provenance)</label>
+        <div id="dProvenance" style="font-family: monospace; font-size: 12px; background: var(--bg); padding: 8px; border-radius: 4px; border: 1px solid var(--border);"></div>
+      </div>
+      <div style="display: flex; gap: 8px; margin-top: 12px;">
+        <a id="dDoi" href="#" target="_blank" class="link-button">Buka DOI / Paper</a>
+        <a id="dDetail" href="#" target="_blank" class="link-button" style="background: var(--bg-surface-hover); color: var(--text);">Lembar Telaah</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let allData = [];
+    let currentFilter = 'all';
+    let searchQuery = '';
+
+    // Auto-detect dark/light theme from parent window (MkDocs Material)
+    function syncTheme() {
+      try {
+        const parentScheme = window.parent.document.body.getAttribute('data-md-color-scheme');
+        if (parentScheme === 'default') {
+          document.documentElement.classList.add('light');
+        } else {
+          document.documentElement.classList.remove('light');
+        }
+      } catch (e) {
+        // standalone or cross-origin fallback
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+          document.documentElement.classList.add('light');
+        }
+      }
+    }
+    syncTheme();
+    window.addEventListener('message', syncTheme);
+
+    const EMBEDDED_DATA = [];
+
+    async function loadData() {
+      try {
+        if (Array.isArray(EMBEDDED_DATA) && EMBEDDED_DATA.length > 0) {
+          allData = EMBEDDED_DATA;
+          renderTable();
+          return;
+        }
+        const res = await fetch('./matrix_data.json');
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        allData = await res.json();
+        renderTable();
+      } catch (err) {
+        document.getElementById('tableBody').innerHTML = `
+          <tr>
+            <td colspan="7" style="text-align: center; padding: 24px; color: #ef4444;">
+              Gagal memuat matrix_data.json (${err.message}).
+            </td>
+          </tr>
+        `;
+      }
+    }
+
+    function setFilter(filter, el) {
+      currentFilter = filter;
+      document.querySelectorAll('.btn-filter').forEach(b => b.classList.remove('active'));
+      el.classList.add('active');
+      renderTable();
+    }
+
+    document.getElementById('searchInput').addEventListener('input', (e) => {
+      searchQuery = e.target.value.toLowerCase().trim();
+      renderTable();
+    });
+
+    function getFilteredList() {
+      return allData.filter(item => {
+        // filter chip
+        if (currentFilter === 'qgs' && !((item.Role || '').toLowerCase().includes('qgs'))) return false;
+        if (currentFilter === 'compc' && !((item.Role || '').toLowerCase().includes('pembanding'))) return false;
+        if (currentFilter === 'gate' && !((item.tags_derived || []).includes('selective-gate'))) return false;
+        // 'peer': all 11 QGS+C are peer-reviewed -> no-op (shows all)
+
+        // search query
+        if (searchQuery) {
+          const combined = [
+            item.Paper_ID, item.BID, item.Title, item.Authors_Year,
+            item.Proposed_Architecture, item.Primary_Metrics_Exact,
+            item.Secondary_Metrics, item.Core_Problem
+          ].join(' ').toLowerCase();
+          if (!combined.includes(searchQuery)) return false;
+        }
+        return true;
+      });
+    }
+
+    function renderTable() {
+      const list = getFilteredList();
+      document.getElementById('resultCount').textContent = `${list.length} studi`;
+
+      if (list.length === 0) {
+        document.getElementById('tableBody').innerHTML = `
+          <tr>
+            <td colspan="7" style="text-align: center; padding: 24px; color: var(--text-muted);">
+              Tidak ada studi yang cocok dengan filter atau kata kunci.
+            </td>
+          </tr>
+        `;
+        return;
+      }
+
+      const rows = list.map(item => `
+        <tr onclick="openDrawer('${item.Paper_ID}')">
+          <td style="text-align: center; font-weight: 600;">${item.Paper_ID}</td>
+          <td style="font-family: monospace; color: var(--text-muted);">${item.BID}</td>
+          <td>
+            <div style="font-weight: 600; line-height: 1.3;" class="line-clamp-2">${item.Title}</div>
+            <div style="color: var(--text-muted); font-size: 11px; margin-top: 2px;" class="line-clamp-1">${item.Authors_Year}</div>
+          </td>
+          <td>
+            <div class="line-clamp-2" style="font-size: 12px;">${item.Proposed_Architecture || '-'}</div>
+          </td>
+          <td style="text-align: center;">
+            <span class="badge badge-qa">${item.QA_Score}</span>
+          </td>
+          <td>
+            <span class="badge ${(item.Role || '').toLowerCase().includes('qgs') ? 'badge-primary' : ''}">${(item.Role || '').toLowerCase().includes('qgs') ? 'QGS' : 'Pembanding-C'}</span>
+          </td>
+          <td>
+            <div class="line-clamp-2" style="font-size: 12px;">${item.Primary_Metrics_Exact || '-'}</div>
+          </td>
+        </tr>
+      `).join('');
+
+      document.getElementById('tableBody').innerHTML = rows;
+    }
+
+    function openDrawer(sid) {
+      const item = allData.find(p => p.Paper_ID === sid);
+      if (!item) return;
+
+      document.getElementById('dSid').textContent = item.Paper_ID;
+      document.getElementById('dBid').textContent = item.BID;
+      document.getElementById('dQa').textContent = 'QA ' + item.QA_Score;
+      document.getElementById('dRole').textContent = (item.Role || '').toLowerCase().includes('qgs') ? 'QGS' : 'Pembanding-C';
+      document.getElementById('dTitle').textContent = item.Title;
+      document.getElementById('dAuthors').textContent = item.Authors_Year + ' — ' + (item.Venue_Tier || '');
+      document.getElementById('dPrimary').textContent = item.Primary_Metrics_Exact || '-';
+      document.getElementById('dSecondary').textContent = item.Secondary_Metrics || '-';
+      document.getElementById('dArch').textContent = item.Proposed_Architecture || '-';
+      document.getElementById('dCore').textContent = item.Core_Problem || '-';
+      document.getElementById('dProvenance').textContent = item.Provenance_Tag || 'UNDOCUMENTED';
+
+      const doiLink = document.getElementById('dDoi');
+      if (item.DOI_URL) {
+        let url = item.DOI_URL;
+        if (!url.startsWith('http')) url = 'https://doi.org/' + url;
+        doiLink.href = url;
+        doiLink.style.display = 'inline-flex';
+      } else {
+        doiLink.style.display = 'none';
+      }
+
+      const detailLink = document.getElementById('dDetail');
+      if (item.CiteKey) {
+        detailLink.href = `../matrix/papers/${item.CiteKey}/`;
+        detailLink.style.display = 'inline-flex';
+      } else {
+        detailLink.style.display = 'none';
+      }
+
+      document.getElementById('drawerOverlay').style.display = 'block';
+      document.getElementById('drawer').style.display = 'flex';
+    }
+
+    function closeDrawer() {
+      document.getElementById('drawerOverlay').style.display = 'none';
+      document.getElementById('drawer').style.display = 'none';
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeDrawer();
+    });
+
+    function exportCSV() {
+      const list = getFilteredList();
+      const headers = ['Paper_ID', 'BID', 'Title', 'Authors_Year', 'Venue_Tier', 'QA_Score', 'Role', 'Primary_Metrics_Exact'];
+      const rows = list.map(item => headers.map(h => `"${(item[h] || '').replace(/"/g, '""')}"`).join(','));
+      const csv = [headers.join(','), ...rows].join('\n');
+      downloadFile(csv, 'slr_matrix_export.csv', 'text/csv');
+    }
+
+    function exportJSON() {
+      const list = getFilteredList();
+      const json = JSON.stringify(list, null, 2);
+      downloadFile(json, 'slr_matrix_export.json', 'application/json');
+    }
+
+    function downloadFile(content, filename, type) {
+      const blob = new Blob([content], { type });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = filename;
+      a.click();
+      URL.revokeObjectURL(url);
+    }
+
+    loadData();
+  </script>
+</body>
+</html>
